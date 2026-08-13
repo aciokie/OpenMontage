@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "render_output_created": true,
+  "render_execution_duration_seconds": 354.2,
+  "governed_tool_returned_success": false,
+  "tool_failure_scope": "Post-render ffprobe discovery only; all 3000 frames and audio had already rendered.",
+  "recovery_action": "Reran the same VideoCompose final-review implementation with the repository-bundled ffprobe on PATH; no rerender or runtime substitution.",
+  "final_review_status": "pass",
+  "final_review_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/artifacts/final_review.json",
+  "output_size_bytes": 47709521
+}

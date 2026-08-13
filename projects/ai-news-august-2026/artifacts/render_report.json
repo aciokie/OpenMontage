@@ -1,0 +1,64 @@
+{
+  "version": "1.0",
+  "outputs": [
+    {
+      "path": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/ai-news-august-2026-master.mp4",
+      "format": "mp4",
+      "codec": "h264",
+      "audio_codec": "aac",
+      "resolution": "1920x1080",
+      "fps": 30.0,
+      "duration_seconds": 100.053333,
+      "file_size_bytes": 47709521,
+      "platform_target": "youtube_landscape"
+    }
+  ],
+  "render_time_seconds": 354.2,
+  "warnings": [
+    "After the replacement render completed all 3000 frames and wrote the MP4, the VideoCompose wrapper returned failure because ffprobe was absent from that process PATH. The identical VideoCompose final-review implementation was rerun with the repository-bundled ffprobe and passed; no rerender or runtime substitution was used.",
+    "Independent ASR transcript comparison was not run; the approved narration reel, exact source-WAV timings, exact caption-to-script match, and PCM output analysis provide the retained audio verification trail."
+  ],
+  "verification_notes": [
+    "Final package audit caught and corrected the prior atelier music fades (2.0s/4.0s) to the approved edit contract (1.5s/2.0s) at 0.16 volume; the master was replaced before delivery.",
+    "Pre-render CompositionValidator then passed with 0 errors and 0 warnings for all 9 exact-duration narration assets, 37 captions, and the 104-second music bed.",
+    "Actual replacement output passed ffprobe: H.264/AAC, 1920x1080, 30 fps, 100.053 seconds, with a valid audio stream.",
+    "Nine replacement-master scene midpoints were inspected at full resolution; no missing stock assets, broken overlays, black scenes, or unreadable primary text were found.",
+    "All 8 replacement-master scene boundaries were sampled; the intentional 8-frame/7-frame dip-to-ink transition is present with no missing timeline intervals.",
+    "PCM audio QA: peak -4.023 dBFS, RMS -19.887 dBFS, 0 clipped samples, no >750 ms silence below -50 dBFS.",
+    "Narration averages -19.58 dBFS while music-only gaps average -38.12 dBFS, preserving intelligibility.",
+    "The replacement final mix peak/RMS are within 0.31 dB of the user-approved review reel.",
+    "All 37 SRT cues are monotonic, non-overlapping, timing-identical to burned captions, and text-identical to the governed script; coverage ends at 99.214 seconds.",
+    "Remotion runtime and atelier composition mode match the approved proposal; no silent runtime swap occurred."
+  ],
+  "render_grammar": "documentary-montage",
+  "slideshow_risk_score": {
+    "average": 0.58,
+    "verdict": "strong"
+  },
+  "decision_log_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/decision_log.json",
+  "final_review_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/artifacts/final_review.json",
+  "metadata": {
+    "composition_mode": "atelier",
+    "composition_id": "AiNewsAugust2026",
+    "render_runtime": "remotion",
+    "render_attempt": 3,
+    "render_attempt_disposition": "Replacement master rendered all 3000 frames. Wrapper post-check PATH failure recovered with bundled ffprobe and the same review implementation.",
+    "render_concurrency": 2,
+    "browser_executable": "/tmp/chromium",
+    "pre_render_validation_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/artifacts/pre-render-validation.json",
+    "raw_compose_result_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/artifacts/video-compose-result.json",
+    "post_render_review_recovery_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/artifacts/video-compose-review-recovery.json",
+    "visual_qa_contact_sheet": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/final-scene-contact-sheet.jpg",
+    "audio_qa_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/audio-qa.json",
+    "transition_qa_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/transition-qa.json",
+    "subtitle_qa_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/subtitle-qa.json",
+    "governed_music_contract": {
+      "volume": 0.16,
+      "fade_in_seconds": 1.5,
+      "fade_out_seconds": 2.0,
+      "ducking_enabled": false
+    },
+    "output_sha256": "c5559316b32b175f0f1834c4f34edccd423f523c274c1eec084dceb019b7f1f4",
+    "provider_spend_usd": 0
+  }
+}

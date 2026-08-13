@@ -1,0 +1,96 @@
+{
+  "version": "1.0",
+  "status": "pass",
+  "export_path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports",
+  "files": [
+    {
+      "path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports/video/output.mp4",
+      "relative_path": "video/output.mp4",
+      "exists": true,
+      "size_bytes": 47709521,
+      "sha256": "c5559316b32b175f0f1834c4f34edccd423f523c274c1eec084dceb019b7f1f4"
+    },
+    {
+      "path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports/video/subtitles.srt",
+      "relative_path": "video/subtitles.srt",
+      "exists": true,
+      "size_bytes": 2770,
+      "sha256": "88803cb9b1a4e66e8d1551ab5e09756af1295c9fe2b1fd3bc785407180b44930"
+    },
+    {
+      "path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports/metadata/metadata.json",
+      "relative_path": "metadata/metadata.json",
+      "exists": true,
+      "size_bytes": 2286,
+      "sha256": "eb236b705884956cc02edcef60f65370a47ca76fd33a08ac2d16b04ea858d67b"
+    },
+    {
+      "path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports/metadata/description.txt",
+      "relative_path": "metadata/description.txt",
+      "exists": true,
+      "size_bytes": 1525,
+      "sha256": "ec5e9d05788aabbcb3ec78347925be49a5c64eceedb884c93ea808694c82c7e2"
+    },
+    {
+      "path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports/metadata/tags.txt",
+      "relative_path": "metadata/tags.txt",
+      "exists": true,
+      "size_bytes": 162,
+      "sha256": "915c7186fc4305c7770a612659ef2a41d89a617ac4fda70fd884e6a84c1b5c38"
+    },
+    {
+      "path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports/metadata/chapters.txt",
+      "relative_path": "metadata/chapters.txt",
+      "exists": true,
+      "size_bytes": 226,
+      "sha256": "f359488605ab2373a755db1227c260c0e7063f46148e5b7c006e9f2895248b0e"
+    },
+    {
+      "path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports/thumbnails/concept.json",
+      "relative_path": "thumbnails/concept.json",
+      "exists": true,
+      "size_bytes": 773,
+      "sha256": "87e12cd03fff16a83e69445640d95f51c95a91f1b93132bfbcaeedb2fbde1c7e"
+    }
+  ],
+  "required_file_count": 7,
+  "all_required_files_present_and_nonempty": true,
+  "video_byte_identical_to_approved_master": true,
+  "video_sha256": "c5559316b32b175f0f1834c4f34edccd423f523c274c1eec084dceb019b7f1f4",
+  "subtitles_byte_identical_to_validated_srt": true,
+  "metadata_json_parseable": true,
+  "thumbnail_concept_json_parseable": true,
+  "seo": {
+    "title_characters": 50,
+    "title_within_60_characters": true,
+    "primary_keyword_in_title": true,
+    "description_has_source_links": true,
+    "description_has_call_to_action": true,
+    "tag_count": 10,
+    "hashtag_count": 5
+  },
+  "chapters": {
+    "count": 5,
+    "starts_at_zero": true,
+    "monotonic": true,
+    "durations_seconds": [
+      23,
+      21,
+      21,
+      13,
+      22
+    ],
+    "all_at_least_10_seconds": true,
+    "all_within_video": true
+  },
+  "thumbnail": {
+    "concept_present": true,
+    "text_overlay": "CHEAPER AI. BIGGER STAKES.",
+    "overlay_word_count": 4,
+    "approved_style_referenced": true,
+    "stock_direction_present": true
+  },
+  "publish_log_schema_valid": true,
+  "network_upload_performed": false,
+  "provider_spend_usd": 0
+}

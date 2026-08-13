@@ -8,8 +8,8 @@
       "severity": "suggestion",
       "category": "music_source",
       "description": "The approved Pixabay source family could not be acquired. A project-original procedural instrumental is supplied as a transparent fallback candidate.",
-      "disposition": "pending",
-      "agent_response": "Recorded as decision d-010, kept disabled in props/edit decisions, and surfaced for explicit approval at this gate."
+      "disposition": "accepted",
+      "agent_response": "Recorded as decisions d-010 and d-011. The user explicitly approved the reviewed procedural fallback by replying \u201cApprove both\u201d; downstream props and edit decisions may now enable this exact asset."
     },
     {
       "id": "assets-002",
@@ -40,6 +40,8 @@
       "verdict": "strong"
     },
     "provider_spend_usd": 0,
-    "music_approval_required": true
+    "music_approval_required": false,
+    "music_approved": true,
+    "approval_verbatim": "Approve both"
   }
 }

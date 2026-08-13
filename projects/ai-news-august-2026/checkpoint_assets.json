@@ -3,28 +3,1007 @@
   "project_id": "ai-news-august-2026",
   "pipeline_type": "animated-explainer",
   "stage": "assets",
-  "status": "awaiting_human",
-  "timestamp": "2026-08-14T16:20:00+08:00",
-  "style_playbook": "project-local editorial dark-tech atelier",
+  "status": "completed",
+  "timestamp": "2026-08-13T22:06:40.351993+00:00",
   "checkpoint_policy": "guided",
   "human_approval_required": true,
-  "human_approved": false,
+  "human_approved": true,
   "artifacts": {
-    "asset_manifest": "artifacts/asset-manifest.json",
-    "assets_review": "artifacts/assets-review.json",
+    "asset_manifest": {
+      "version": "1.0",
+      "assets": [
+        {
+          "id": "stock-city",
+          "type": "image",
+          "path": "assets/images/stock/city-sean-pollock-PhYq704ffdA.jpg",
+          "source_tool": "live image search plus first-party source verification",
+          "scene_id": "s1",
+          "cost_usd": 0,
+          "resolution": "3000x1688",
+          "format": "jpg",
+          "quality_score": 0.94,
+          "subtype": "stock",
+          "generation_summary": "Sean Pollock; approved representative crop; reused as the scene-06 capital-scale background.",
+          "provider": "Unsplash",
+          "license": "Unsplash License",
+          "original_url": "https://unsplash.com/photos/low-angle-photo-of-city-high-rise-buildings-during-daytime-PhYq704ffdA"
+        },
+        {
+          "id": "stock-edge-device",
+          "type": "image",
+          "path": "assets/images/stock/edge-device-lilly-rum-15YTRXKuJ14.jpg",
+          "source_tool": "live image search plus first-party source verification",
+          "scene_id": "s2",
+          "cost_usd": 0,
+          "resolution": "3000x2000",
+          "format": "jpg",
+          "quality_score": 0.94,
+          "subtype": "stock",
+          "generation_summary": "Lilly Rum; verified free/non-Plus laptop-and-phone stock; reused for the scene-03 on-device migration.",
+          "provider": "Unsplash",
+          "license": "Unsplash License",
+          "original_url": "https://unsplash.com/photos/15YTRXKuJ14"
+        },
+        {
+          "id": "stock-server-technician",
+          "type": "image",
+          "path": "assets/images/stock/server-technician-panumas-19226354.jpg",
+          "source_tool": "live image search plus first-party source verification",
+          "scene_id": "s5",
+          "cost_usd": 0,
+          "resolution": "1127x750",
+          "format": "jpg",
+          "quality_score": 0.94,
+          "subtype": "stock",
+          "generation_summary": "panumas nikhomkhai; verified free-use technician/server-rack stock.",
+          "provider": "Pexels",
+          "license": "Pexels License",
+          "original_url": "https://www.pexels.com/photo/engineer-fixing-core-swith-in-data-center-room-19226354/"
+        },
+        {
+          "id": "stock-eu-flag",
+          "type": "image",
+          "path": "assets/images/stock/eu-flag-dmitrii-e-9IijGDLb1D4.jpg",
+          "source_tool": "live image search plus first-party source verification",
+          "scene_id": "s7",
+          "cost_usd": 0,
+          "resolution": "3000x4280",
+          "format": "jpg",
+          "quality_score": 0.94,
+          "subtype": "stock",
+          "generation_summary": "Dmitrii E.; verified free/non-Plus EU-flag stock.",
+          "provider": "Unsplash",
+          "license": "Unsplash License",
+          "original_url": "https://unsplash.com/photos/9IijGDLb1D4"
+        },
+        {
+          "id": "stock-code-laptop",
+          "type": "image",
+          "path": "assets/images/stock/code-laptop-daniil-komov-QkYZsgJt9Rg.jpg",
+          "source_tool": "live image search plus first-party source verification",
+          "scene_id": "s4",
+          "cost_usd": 0,
+          "resolution": "3000x2000",
+          "format": "jpg",
+          "quality_score": 0.94,
+          "subtype": "stock",
+          "generation_summary": "Daniil Komov; verified free/non-Plus code-on-laptop stock.",
+          "provider": "Unsplash",
+          "license": "Unsplash License",
+          "original_url": "https://unsplash.com/photos/QkYZsgJt9Rg"
+        },
+        {
+          "id": "stock-gym-app",
+          "type": "image",
+          "path": "assets/images/stock/gym-app-thisisengineering-3912952.jpg",
+          "source_tool": "live image search plus first-party source verification",
+          "scene_id": "s8",
+          "cost_usd": 0,
+          "resolution": "1125x750",
+          "format": "jpg",
+          "quality_score": 0.94,
+          "subtype": "stock",
+          "generation_summary": "ThisIsEngineering; verified free-use gym/fitness-app stock.",
+          "provider": "Pexels",
+          "license": "Pexels License",
+          "original_url": "https://www.pexels.com/photo/person-holding-black-smartphone-3912952/"
+        },
+        {
+          "id": "narration-s1",
+          "type": "narration",
+          "path": "assets/narration/normalized/s1.wav",
+          "source_tool": "Piper CLI plus FFmpeg loudnorm",
+          "scene_id": "s1",
+          "model": "en_US-lessac-medium",
+          "cost_usd": 0,
+          "duration_seconds": 8.103771,
+          "format": "wav PCM16 mono 48kHz",
+          "quality_score": 0.9,
+          "subtype": "voiceover",
+          "generation_summary": "Approved voice identity applied to the section provider_text; normalized to -16 LUFS target and -1.5 dBTP ceiling.",
+          "provider": "Piper local",
+          "license": "MIT engine; model metadata retained locally",
+          "voice_performance": {
+            "source_section_id": "s1",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "length_scale": 1.35,
+              "sentence_silence_seconds": 0.2,
+              "normalization": "FFmpeg loudnorm I=-16 TP=-1.5 LRA=7",
+              "sample_voice_model": "en_US-lessac-medium"
+            },
+            "sample_approved": true,
+            "sample_path": "artifacts/sample-preflight.json#voice_sample",
+            "review_notes": "Representative Lessac sample was explicitly approved. Historical approved sample audio was lost in ignored-state regression; batch retains the approved model/voice identity and documented per-section pacing."
+          }
+        },
+        {
+          "id": "narration-s2",
+          "type": "narration",
+          "path": "assets/narration/normalized/s2.wav",
+          "source_tool": "Piper CLI plus FFmpeg loudnorm",
+          "scene_id": "s2",
+          "model": "en_US-lessac-medium",
+          "cost_usd": 0,
+          "duration_seconds": 13.514021,
+          "format": "wav PCM16 mono 48kHz",
+          "quality_score": 0.9,
+          "subtype": "voiceover",
+          "generation_summary": "Approved voice identity applied to the section provider_text; normalized to -16 LUFS target and -1.5 dBTP ceiling.",
+          "provider": "Piper local",
+          "license": "MIT engine; model metadata retained locally",
+          "voice_performance": {
+            "source_section_id": "s2",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "length_scale": 0.68,
+              "sentence_silence_seconds": 0.2,
+              "normalization": "FFmpeg loudnorm I=-16 TP=-1.5 LRA=7",
+              "sample_voice_model": "en_US-lessac-medium"
+            },
+            "sample_approved": true,
+            "sample_path": "artifacts/sample-preflight.json#voice_sample",
+            "review_notes": "Representative Lessac sample was explicitly approved. Historical approved sample audio was lost in ignored-state regression; batch retains the approved model/voice identity and documented per-section pacing."
+          }
+        },
+        {
+          "id": "narration-s3",
+          "type": "narration",
+          "path": "assets/narration/normalized/s3.wav",
+          "source_tool": "Piper CLI plus FFmpeg loudnorm",
+          "scene_id": "s3",
+          "model": "en_US-lessac-medium",
+          "cost_usd": 0,
+          "duration_seconds": 11.354563,
+          "format": "wav PCM16 mono 48kHz",
+          "quality_score": 0.9,
+          "subtype": "voiceover",
+          "generation_summary": "Approved voice identity applied to the section provider_text; normalized to -16 LUFS target and -1.5 dBTP ceiling.",
+          "provider": "Piper local",
+          "license": "MIT engine; model metadata retained locally",
+          "voice_performance": {
+            "source_section_id": "s3",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "length_scale": 1.2,
+              "sentence_silence_seconds": 0.2,
+              "normalization": "FFmpeg loudnorm I=-16 TP=-1.5 LRA=7",
+              "sample_voice_model": "en_US-lessac-medium"
+            },
+            "sample_approved": true,
+            "sample_path": "artifacts/sample-preflight.json#voice_sample",
+            "review_notes": "Representative Lessac sample was explicitly approved. Historical approved sample audio was lost in ignored-state regression; batch retains the approved model/voice identity and documented per-section pacing."
+          }
+        },
+        {
+          "id": "narration-s4",
+          "type": "narration",
+          "path": "assets/narration/normalized/s4.wav",
+          "source_tool": "Piper CLI plus FFmpeg loudnorm",
+          "scene_id": "s4",
+          "model": "en_US-lessac-medium",
+          "cost_usd": 0,
+          "duration_seconds": 7.755479,
+          "format": "wav PCM16 mono 48kHz",
+          "quality_score": 0.9,
+          "subtype": "voiceover",
+          "generation_summary": "Approved voice identity applied to the section provider_text; normalized to -16 LUFS target and -1.5 dBTP ceiling.",
+          "provider": "Piper local",
+          "license": "MIT engine; model metadata retained locally",
+          "voice_performance": {
+            "source_section_id": "s4",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "length_scale": 1.05,
+              "sentence_silence_seconds": 0.2,
+              "normalization": "FFmpeg loudnorm I=-16 TP=-1.5 LRA=7",
+              "sample_voice_model": "en_US-lessac-medium"
+            },
+            "sample_approved": true,
+            "sample_path": "artifacts/sample-preflight.json#voice_sample",
+            "review_notes": "Representative Lessac sample was explicitly approved. Historical approved sample audio was lost in ignored-state regression; batch retains the approved model/voice identity and documented per-section pacing."
+          }
+        },
+        {
+          "id": "narration-s5",
+          "type": "narration",
+          "path": "assets/narration/normalized/s5.wav",
+          "source_tool": "Piper CLI plus FFmpeg loudnorm",
+          "scene_id": "s5",
+          "model": "en_US-lessac-medium",
+          "cost_usd": 0,
+          "duration_seconds": 4.446625,
+          "format": "wav PCM16 mono 48kHz",
+          "quality_score": 0.9,
+          "subtype": "voiceover",
+          "generation_summary": "Approved voice identity applied to the section provider_text; normalized to -16 LUFS target and -1.5 dBTP ceiling.",
+          "provider": "Piper local",
+          "license": "MIT engine; model metadata retained locally",
+          "voice_performance": {
+            "source_section_id": "s5",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "length_scale": 1.45,
+              "sentence_silence_seconds": 0.2,
+              "normalization": "FFmpeg loudnorm I=-16 TP=-1.5 LRA=7",
+              "sample_voice_model": "en_US-lessac-medium"
+            },
+            "sample_approved": true,
+            "sample_path": "artifacts/sample-preflight.json#voice_sample",
+            "review_notes": "Representative Lessac sample was explicitly approved. Historical approved sample audio was lost in ignored-state regression; batch retains the approved model/voice identity and documented per-section pacing."
+          }
+        },
+        {
+          "id": "narration-s6",
+          "type": "narration",
+          "path": "assets/narration/normalized/s6.wav",
+          "source_tool": "Piper CLI plus FFmpeg loudnorm",
+          "scene_id": "s6",
+          "model": "en_US-lessac-medium",
+          "cost_usd": 0,
+          "duration_seconds": 15.336792,
+          "format": "wav PCM16 mono 48kHz",
+          "quality_score": 0.9,
+          "subtype": "voiceover",
+          "generation_summary": "Approved voice identity applied to the section provider_text; normalized to -16 LUFS target and -1.5 dBTP ceiling.",
+          "provider": "Piper local",
+          "license": "MIT engine; model metadata retained locally",
+          "voice_performance": {
+            "source_section_id": "s6",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "length_scale": 1.0,
+              "sentence_silence_seconds": 0.2,
+              "normalization": "FFmpeg loudnorm I=-16 TP=-1.5 LRA=7",
+              "sample_voice_model": "en_US-lessac-medium"
+            },
+            "sample_approved": true,
+            "sample_path": "artifacts/sample-preflight.json#voice_sample",
+            "review_notes": "Representative Lessac sample was explicitly approved. Historical approved sample audio was lost in ignored-state regression; batch retains the approved model/voice identity and documented per-section pacing."
+          }
+        },
+        {
+          "id": "narration-s7",
+          "type": "narration",
+          "path": "assets/narration/normalized/s7.wav",
+          "source_tool": "Piper CLI plus FFmpeg loudnorm",
+          "scene_id": "s7",
+          "model": "en_US-lessac-medium",
+          "cost_usd": 0,
+          "duration_seconds": 13.096063,
+          "format": "wav PCM16 mono 48kHz",
+          "quality_score": 0.9,
+          "subtype": "voiceover",
+          "generation_summary": "Approved voice identity applied to the section provider_text; normalized to -16 LUFS target and -1.5 dBTP ceiling.",
+          "provider": "Piper local",
+          "license": "MIT engine; model metadata retained locally",
+          "voice_performance": {
+            "source_section_id": "s7",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "length_scale": 1.0,
+              "sentence_silence_seconds": 0.2,
+              "normalization": "FFmpeg loudnorm I=-16 TP=-1.5 LRA=7",
+              "sample_voice_model": "en_US-lessac-medium"
+            },
+            "sample_approved": true,
+            "sample_path": "artifacts/sample-preflight.json#voice_sample",
+            "review_notes": "Representative Lessac sample was explicitly approved. Historical approved sample audio was lost in ignored-state regression; batch retains the approved model/voice identity and documented per-section pacing."
+          }
+        },
+        {
+          "id": "narration-s8",
+          "type": "narration",
+          "path": "assets/narration/normalized/s8.wav",
+          "source_tool": "Piper CLI plus FFmpeg loudnorm",
+          "scene_id": "s8",
+          "model": "en_US-lessac-medium",
+          "cost_usd": 0,
+          "duration_seconds": 14.396375,
+          "format": "wav PCM16 mono 48kHz",
+          "quality_score": 0.9,
+          "subtype": "voiceover",
+          "generation_summary": "Approved voice identity applied to the section provider_text; normalized to -16 LUFS target and -1.5 dBTP ceiling.",
+          "provider": "Piper local",
+          "license": "MIT engine; model metadata retained locally",
+          "voice_performance": {
+            "source_section_id": "s8",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "length_scale": 1.35,
+              "sentence_silence_seconds": 0.2,
+              "normalization": "FFmpeg loudnorm I=-16 TP=-1.5 LRA=7",
+              "sample_voice_model": "en_US-lessac-medium"
+            },
+            "sample_approved": true,
+            "sample_path": "artifacts/sample-preflight.json#voice_sample",
+            "review_notes": "Representative Lessac sample was explicitly approved. Historical approved sample audio was lost in ignored-state regression; batch retains the approved model/voice identity and documented per-section pacing."
+          }
+        },
+        {
+          "id": "narration-s9",
+          "type": "narration",
+          "path": "assets/narration/normalized/s9.wav",
+          "source_tool": "Piper CLI plus FFmpeg loudnorm",
+          "scene_id": "s9",
+          "model": "en_US-lessac-medium",
+          "cost_usd": 0,
+          "duration_seconds": 6.013979,
+          "format": "wav PCM16 mono 48kHz",
+          "quality_score": 0.9,
+          "subtype": "voiceover",
+          "generation_summary": "Approved voice identity applied to the section provider_text; normalized to -16 LUFS target and -1.5 dBTP ceiling.",
+          "provider": "Piper local",
+          "license": "MIT engine; model metadata retained locally",
+          "voice_performance": {
+            "source_section_id": "s9",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "length_scale": 1.0,
+              "sentence_silence_seconds": 0.2,
+              "normalization": "FFmpeg loudnorm I=-16 TP=-1.5 LRA=7",
+              "sample_voice_model": "en_US-lessac-medium"
+            },
+            "sample_approved": true,
+            "sample_path": "artifacts/sample-preflight.json#voice_sample",
+            "review_notes": "Representative Lessac sample was explicitly approved. Historical approved sample audio was lost in ignored-state regression; batch retains the approved model/voice identity and documented per-section pacing."
+          }
+        },
+        {
+          "id": "music-procedural-candidate",
+          "type": "music",
+          "path": "assets/music/procedural-signal-current-114bpm.mp3",
+          "source_tool": "project-local NumPy synthesis plus FFmpeg loudnorm",
+          "scene_id": "all",
+          "seed": 20260814,
+          "cost_usd": 0,
+          "duration_seconds": 104.04,
+          "format": "mp3 stereo 48kHz 192kbps",
+          "quality_score": 0.88,
+          "subtype": "provisional_background_instrumental",
+          "generation_summary": "Original restrained 114.8 BPM editorial technology bed composed as a zero-cost fallback after verified Pixabay candidates could not be acquired in the sandbox. Pending explicit assets-gate approval.",
+          "provider": "OpenMontage procedural",
+          "license": "Original work created for this project"
+        },
+        {
+          "id": "subtitle-pages",
+          "type": "subtitle",
+          "path": "assets/subtitles/caption-pages.json",
+          "source_tool": "approved-script timing aligned proportionally to normalized narration sections",
+          "scene_id": "all",
+          "cost_usd": 0,
+          "format": "json plus SRT",
+          "quality_score": 0.9,
+          "subtype": "accessibility_captions",
+          "generation_summary": "Six-word caption pages aligned to actual narration segment durations."
+        },
+        {
+          "id": "atelier-composition",
+          "type": "animation",
+          "path": "Composition.tsx",
+          "source_tool": "hand-authored Remotion atelier composition",
+          "scene_id": "all",
+          "cost_usd": 0,
+          "resolution": "1920x1080",
+          "format": "tsx",
+          "quality_score": 0.92,
+          "subtype": "bespoke_motion",
+          "generation_summary": "Nine hand-authored, scene-distinct editorial compositions; no stock scene registry imports."
+        },
+        {
+          "id": "review-still-s1",
+          "type": "image",
+          "path": "snapshots/s1.png",
+          "source_tool": "Remotion atelier still renderer",
+          "scene_id": "s1",
+          "cost_usd": 0,
+          "resolution": "1920x1080",
+          "format": "png",
+          "quality_score": 0.93,
+          "subtype": "assets_gate_review_still",
+          "generation_summary": "Representative mid-scene frame rendered before compose, as required by the atelier assets gate."
+        },
+        {
+          "id": "review-still-s2",
+          "type": "image",
+          "path": "snapshots/s2.png",
+          "source_tool": "Remotion atelier still renderer",
+          "scene_id": "s2",
+          "cost_usd": 0,
+          "resolution": "1920x1080",
+          "format": "png",
+          "quality_score": 0.93,
+          "subtype": "assets_gate_review_still",
+          "generation_summary": "Representative mid-scene frame rendered before compose, as required by the atelier assets gate."
+        },
+        {
+          "id": "review-still-s3",
+          "type": "image",
+          "path": "snapshots/s3.png",
+          "source_tool": "Remotion atelier still renderer",
+          "scene_id": "s3",
+          "cost_usd": 0,
+          "resolution": "1920x1080",
+          "format": "png",
+          "quality_score": 0.93,
+          "subtype": "assets_gate_review_still",
+          "generation_summary": "Representative mid-scene frame rendered before compose, as required by the atelier assets gate."
+        },
+        {
+          "id": "review-still-s4",
+          "type": "image",
+          "path": "snapshots/s4.png",
+          "source_tool": "Remotion atelier still renderer",
+          "scene_id": "s4",
+          "cost_usd": 0,
+          "resolution": "1920x1080",
+          "format": "png",
+          "quality_score": 0.93,
+          "subtype": "assets_gate_review_still",
+          "generation_summary": "Representative mid-scene frame rendered before compose, as required by the atelier assets gate."
+        },
+        {
+          "id": "review-still-s5",
+          "type": "image",
+          "path": "snapshots/s5.png",
+          "source_tool": "Remotion atelier still renderer",
+          "scene_id": "s5",
+          "cost_usd": 0,
+          "resolution": "1920x1080",
+          "format": "png",
+          "quality_score": 0.93,
+          "subtype": "assets_gate_review_still",
+          "generation_summary": "Representative mid-scene frame rendered before compose, as required by the atelier assets gate."
+        },
+        {
+          "id": "review-still-s6",
+          "type": "image",
+          "path": "snapshots/s6.png",
+          "source_tool": "Remotion atelier still renderer",
+          "scene_id": "s6",
+          "cost_usd": 0,
+          "resolution": "1920x1080",
+          "format": "png",
+          "quality_score": 0.93,
+          "subtype": "assets_gate_review_still",
+          "generation_summary": "Representative mid-scene frame rendered before compose, as required by the atelier assets gate."
+        },
+        {
+          "id": "review-still-s7",
+          "type": "image",
+          "path": "snapshots/s7.png",
+          "source_tool": "Remotion atelier still renderer",
+          "scene_id": "s7",
+          "cost_usd": 0,
+          "resolution": "1920x1080",
+          "format": "png",
+          "quality_score": 0.93,
+          "subtype": "assets_gate_review_still",
+          "generation_summary": "Representative mid-scene frame rendered before compose, as required by the atelier assets gate."
+        },
+        {
+          "id": "review-still-s8",
+          "type": "image",
+          "path": "snapshots/s8.png",
+          "source_tool": "Remotion atelier still renderer",
+          "scene_id": "s8",
+          "cost_usd": 0,
+          "resolution": "1920x1080",
+          "format": "png",
+          "quality_score": 0.93,
+          "subtype": "assets_gate_review_still",
+          "generation_summary": "Representative mid-scene frame rendered before compose, as required by the atelier assets gate."
+        },
+        {
+          "id": "review-still-s9",
+          "type": "image",
+          "path": "snapshots/s9.png",
+          "source_tool": "Remotion atelier still renderer",
+          "scene_id": "s9",
+          "cost_usd": 0,
+          "resolution": "1920x1080",
+          "format": "png",
+          "quality_score": 0.93,
+          "subtype": "assets_gate_review_still",
+          "generation_summary": "Representative mid-scene frame rendered before compose, as required by the atelier assets gate."
+        },
+        {
+          "id": "review-contact-sheet",
+          "type": "image",
+          "path": "snapshots/assets-review-contact-sheet.jpg",
+          "source_tool": "Pillow contact-sheet assembly",
+          "scene_id": "all",
+          "cost_usd": 0,
+          "resolution": "1752x1225",
+          "format": "jpg",
+          "quality_score": 0.94,
+          "subtype": "assets_gate_filmstrip",
+          "generation_summary": "Nine representative scene stills arranged for mandatory assets review."
+        },
+        {
+          "id": "review-audio-preview",
+          "type": "audio",
+          "path": "assets/review/assets-review-audio-preview.mp3",
+          "source_tool": "FFmpeg timeline mix",
+          "scene_id": "all",
+          "cost_usd": 0,
+          "duration_seconds": 100.032,
+          "format": "mp3 stereo 48kHz 192kbps",
+          "quality_score": 0.9,
+          "subtype": "assets_gate_audio_reel",
+          "generation_summary": "All nine normalized narration sections scheduled against the provisional procedural music candidate at 16% gain; review-only, not a video draft."
+        },
+        {
+          "id": "subtitle-srt",
+          "type": "subtitle",
+          "path": "assets/subtitles/ai-news-august-2026.srt",
+          "source_tool": "approved-script clause timing aligned to normalized narration",
+          "scene_id": "all",
+          "cost_usd": 0,
+          "format": "srt",
+          "quality_score": 0.9,
+          "subtype": "accessibility_captions",
+          "generation_summary": "Clause-aware caption export aligned to the actual narration schedule."
+        }
+      ],
+      "total_cost_usd": 0,
+      "metadata": {
+        "project_id": "ai-news-august-2026",
+        "generated_at": "2026-08-14T16:20:00+08:00",
+        "music_status": "provisional fallback candidate; explicit approval required",
+        "verified_stock_count": 6,
+        "narration_section_count": 9,
+        "sha256": {
+          "stock-city": "2366b7762637a4157889a859d35eecf7b04436538d8b7284afc1b24eacb5fa99",
+          "stock-edge-device": "2ce1e5ec6f67a662bf40b728b61ea54555740ac683d401a70909b5aa844b1cbb",
+          "stock-server-technician": "dec00ef1db1f1ef2af6f276be3c516983d2bc04446896baa3c3cd19bbd84a374",
+          "stock-eu-flag": "131d1b15fbc5cb554ea3fd53316b6800245d121ecb7e1899087aae4c4f811674",
+          "stock-code-laptop": "b903c7cfdbd2d659c1b193c30a42173251db598a34655da4f8f0a540000d3968",
+          "stock-gym-app": "8a84262ea2f13ffd10191e499006731ddd2900105705891b91f92d969024c98b",
+          "narration-s1": "fccfb43994f26de3fb249b6202ccd2a49780a25d54243f83876b028d8e0cb2bc",
+          "narration-s2": "87118dc734174dda265fe366483ee857f5579537433a1cc5ff80524f55769da4",
+          "narration-s3": "6c490fb44a5f61fdfb6b606f16273c47038e66edb16c9bfef092e66531a86fad",
+          "narration-s4": "5ef33d1f69f635232ebe8173e09f2af66c2661090890a30f865c2749a9fbf6e9",
+          "narration-s5": "1360a5dc2aee55144ebf610e4fbfc1412d5561633d117cffd71d2885b1c7e2c4",
+          "narration-s6": "eea7cb339bd16b11ba181c59e6b3c8d0a80117ca27577a4aaa9ab5ac2babad17",
+          "narration-s7": "e11a9b3a13a63657905660f32438c88cda7880b5a2e38b0ba0d547f328bd7759",
+          "narration-s8": "5c8c3ac9ec0e8e0fabe5a8a5f77c9795cc383d1a8a1da8377af392e3da810955",
+          "narration-s9": "bdc22b3036f52d8e30e9048bfd2ebb378b9e3c1e4f04e034c01d58c16aeddebf",
+          "music-procedural-candidate": "afbf654d3199c1a09d315482493d9c0314fbbfe7a2ff1fd9ddd425267706d8d1",
+          "subtitle-pages": "27be2f68c3a90cfcaf34045a21919da15dc292445b6a0dacf56f730872f7d7dd",
+          "atelier-composition": "0b825bef6574cdd834f1b6c5af79ea11c2ea447ec9b786ca2a1a960830f23100",
+          "review-still-s1": "8227cbd5a40876024b0262df1d65374c3881694fc9ea2f2270707cb45865ad6c",
+          "review-still-s2": "341a88a2d7cc89421972f0ccd102e804c3bad2c3953672cbd090b89bce32f579",
+          "review-still-s3": "378434a6abf40522228d5bca7a7921dde5f19bca96e22fe67c3bc3bbd2b9b45f",
+          "review-still-s4": "2d3ad220ca6a80f8c9dcd1faac6cc649d95e9160548386c5ea404946d13e2656",
+          "review-still-s5": "d44dc8d83d11c2815242c10ac821290e3ff8b0753a6775f6816aafb19967595c",
+          "review-still-s6": "2cac9b0682735c0a6bae44344ad066aad706254b088025b91a05787b6845b435",
+          "review-still-s7": "addb6e674eeb5a21f419eca9211302ca3425b2bb6f7d2f451814a46110c0a082",
+          "review-still-s8": "e36a49b71a78add361dceb6e55ee544964fd48015e467486379b036cf9af2931",
+          "review-still-s9": "ccb24cc98c4068af3af7ad756990a0d5d8e5eebf512e3b5ef2ebcd1980043a0c",
+          "review-contact-sheet": "82dcb2a9033fe9bf7b3b96ef589027d8795530958192d013591fbab83defb36a",
+          "review-audio-preview": "499ab8ffde13a581340a32cb06317cc9876c8e1939692070e45dea40633731b8",
+          "subtitle-srt": "88803cb9b1a4e66e8d1551ab5e09756af1295c9fe2b1fd3bc785407180b44930",
+          "atelier-root": "b5d6a1997f5718df1cffc8cebdc636cbd915203c25a60f6b750c28cef955061f",
+          "atelier-entry": "32185b5fe29233ed658013191cf02a1ba3181fe15dd4c43848136a344887ff0f",
+          "composition-props": "2a487fee1e8eb0e9d9c3e06f55f3a1a4362a1c6e8dcedb71e1c1f9bf8481d5dd",
+          "art-direction": "1eaad0911d5e097a03764d36ef4d5c4c35421a3542e40c5ab0f5b729d161aa20"
+        },
+        "approved_stock_crop_sha256": "2366b7762637a4157889a859d35eecf7b04436538d8b7284afc1b24eacb5fa99",
+        "approved_voice_sample_record": "artifacts/sample-preflight.json",
+        "review_still_count": 9,
+        "assets_gate_status": "awaiting_human"
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "ai-news-august-2026",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "proposal",
+          "category": "pipeline_selection",
+          "subject": "Production pipeline",
+          "options_considered": [
+            {
+              "option_id": "animated",
+              "label": "animated-explainer",
+              "score": 0.96,
+              "reason": "Required staged explainer workflow."
+            },
+            {
+              "option_id": "cinematic",
+              "label": "cinematic-narrative",
+              "score": 0.55,
+              "reason": "Less suited to a source-dense current-news explainer.",
+              "rejected_because": "Narrative grammar does not fit five sourced updates."
+            }
+          ],
+          "selected": "animated",
+          "reason": "The animated-explainer manifest provides the required research, asset, review, and render gates.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "proposal",
+          "category": "concept_selection",
+          "subject": "Editorial concept",
+          "options_considered": [
+            {
+              "option_id": "c1",
+              "label": "AI Gets Cheaper, Stakes Get Bigger",
+              "score": 0.96,
+              "reason": "Memorable contradiction connecting all five items."
+            },
+            {
+              "option_id": "c2",
+              "label": "Five Signals From AI Week",
+              "score": 0.75,
+              "reason": "Clear but generic.",
+              "rejected_because": "Less cohesive."
+            },
+            {
+              "option_id": "c3",
+              "label": "From Laptop to Law",
+              "score": 0.78,
+              "reason": "Strong journey but underweights OpenAI access.",
+              "rejected_because": "Narrower thesis."
+            }
+          ],
+          "selected": "c1",
+          "reason": "User approved the contradiction-led concept.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "proposal",
+          "category": "renderer_family_selection",
+          "subject": "Creative renderer grammar",
+          "options_considered": [
+            {
+              "option_id": "documentary",
+              "label": "documentary-montage",
+              "score": 0.93,
+              "reason": "Best for sourced stock and factual overlays."
+            },
+            {
+              "option_id": "data",
+              "label": "explainer-data",
+              "score": 0.86,
+              "reason": "Strong cards but underuses photography.",
+              "rejected_because": "Stock photos are an explicit requirement."
+            }
+          ],
+          "selected": "documentary",
+          "reason": "Documentary montage supports visual metaphor while native graphics carry precise facts.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Technical render runtime",
+          "options_considered": [
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.95,
+              "reason": "Deterministic frame-based motion and audio."
+            },
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.42,
+              "reason": "Published CLI unavailable in environment.",
+              "rejected_because": "Unavailable."
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg",
+              "score": 0.61,
+              "reason": "Suitable only as a simple fallback.",
+              "rejected_because": "Cannot realize the approved bespoke motion grammar alone."
+            }
+          ],
+          "selected": "remotion",
+          "reason": "Remotion was approved; FFmpeg remains finishing/validation only.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "proposal",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "atelier",
+              "label": "atelier",
+              "score": 0.97,
+              "reason": "Fresh project-local composition and signature signal-line device."
+            },
+            {
+              "option_id": "templated",
+              "label": "templated",
+              "score": 0.52,
+              "reason": "Faster but repeats stock components.",
+              "rejected_because": "Hero explainer requires bespoke composition."
+            }
+          ],
+          "selected": "atelier",
+          "reason": "Atelier mode preserves the approved art direction and quality floor.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-006",
+          "stage": "proposal",
+          "category": "voice_selection",
+          "subject": "Narration voice",
+          "options_considered": [
+            {
+              "option_id": "piper",
+              "label": "Piper en_US-lessac-medium",
+              "score": 0.9,
+              "reason": "Approved sample, intelligible, local, zero spend."
+            },
+            {
+              "option_id": "cloud",
+              "label": "Cloud TTS",
+              "score": 0.75,
+              "reason": "More direction control but unnecessary provider spend.",
+              "rejected_because": "Approved local sample already meets the gate."
+            }
+          ],
+          "selected": "piper",
+          "reason": "The user explicitly approved the Lessac representative sample.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-007",
+          "stage": "proposal",
+          "category": "music_source",
+          "subject": "Background music source",
+          "options_considered": [
+            {
+              "option_id": "pixabay",
+              "label": "Pixabay free instrumental",
+              "score": 0.88,
+              "reason": "No-key licensed technology tracks."
+            },
+            {
+              "option_id": "none",
+              "label": "No music",
+              "score": 0.4,
+              "reason": "Avoids acquisition but weakens pacing.",
+              "rejected_because": "Approved plan includes restrained music."
+            }
+          ],
+          "selected": "pixabay",
+          "reason": "Pixabay is the approved no-key licensed source.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-008",
+          "stage": "assets",
+          "category": "provider_selection",
+          "subject": "Stock photography",
+          "options_considered": [
+            {
+              "option_id": "stock",
+              "label": "Verified Unsplash and Pexels free stock",
+              "score": 0.96,
+              "reason": "Matches explicit user request and permits editing."
+            },
+            {
+              "option_id": "generated",
+              "label": "AI-generated visuals",
+              "score": 0.2,
+              "reason": "Not requested.",
+              "rejected_because": "User explicitly required stock photos."
+            }
+          ],
+          "selected": "stock",
+          "reason": "Use only verified free/non-premium images with canonical source and license records.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-009",
+          "stage": "assets",
+          "category": "budget_tradeoff",
+          "subject": "Provider-spend plan",
+          "options_considered": [
+            {
+              "option_id": "free",
+              "label": "Local/free providers: $0",
+              "score": 0.99,
+              "reason": "Within cap and approved."
+            },
+            {
+              "option_id": "premium",
+              "label": "Premium providers up to $2",
+              "score": 0.58,
+              "reason": "Could increase voice expressiveness but not needed.",
+              "rejected_because": "Approved samples support the free path."
+            }
+          ],
+          "selected": "free",
+          "reason": "$0 actual/estimated provider spend is within the approved $2 cap.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-010",
+          "stage": "assets",
+          "category": "fallback_decision",
+          "subject": "Background music acquisition fallback",
+          "options_considered": [
+            {
+              "option_id": "pixabay-514734",
+              "label": "AudioDollar Technology Background Technology (Pixabay 514734)",
+              "score": 0.88,
+              "reason": "Approved source family and preferred editorial fit.",
+              "rejected_because": "First-party media acquisition remained blocked after browser, shell, and CDN attempts."
+            },
+            {
+              "option_id": "procedural-original",
+              "label": "Original procedural editorial bed",
+              "score": 0.86,
+              "reason": "Local, deterministic, instrumental, zero cost, and avoids Content ID uncertainty."
+            },
+            {
+              "option_id": "none",
+              "label": "No music",
+              "score": 0.4,
+              "reason": "Avoids substitution.",
+              "rejected_because": "Weakens the approved restrained-music pacing plan."
+            }
+          ],
+          "selected": "procedural-original",
+          "reason": "A project-original 114.8 BPM candidate was produced as the transparent fallback; selection remains provisional until the assets review.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-011",
+          "stage": "assets",
+          "category": "music_source",
+          "subject": "Approval of project-original procedural background music fallback",
+          "options_considered": [
+            {
+              "option_id": "procedural-original-approved",
+              "label": "Approve original procedural editorial bed",
+              "score": 1.0,
+              "reason": "The reviewed 100.032-second mix demonstrates the local 114.8 BPM instrumental at the intended 16% level."
+            },
+            {
+              "option_id": "hold-for-pixabay",
+              "label": "Hold production for first-party Pixabay acquisition",
+              "score": 0.35,
+              "reason": "Would preserve the initial sourcing preference but block the production after repeated acquisition failures.",
+              "rejected_because": "The user explicitly approved the reviewed procedural fallback."
+            },
+            {
+              "option_id": "no-music",
+              "label": "Proceed without music",
+              "score": 0.3,
+              "reason": "Avoids substitution but weakens the approved pacing and reviewed mix.",
+              "rejected_because": "The user explicitly approved the reviewed procedural fallback."
+            }
+          ],
+          "selected": "procedural-original-approved",
+          "reason": "The user approved both the complete visual/narration batch and the procedural fallback by replying \u201cApprove both\u201d.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        }
+      ]
+    },
+    "assets_review": {
+      "version": "1.0",
+      "stage": "assets",
+      "round": 1,
+      "findings": [
+        {
+          "id": "assets-001",
+          "severity": "suggestion",
+          "category": "music_source",
+          "description": "The approved Pixabay source family could not be acquired. A project-original procedural instrumental is supplied as a transparent fallback candidate.",
+          "disposition": "accepted",
+          "agent_response": "Recorded as decisions d-010 and d-011. The user explicitly approved the reviewed procedural fallback by replying \u201cApprove both\u201d; downstream props and edit decisions may now enable this exact asset."
+        },
+        {
+          "id": "assets-002",
+          "severity": "nitpick",
+          "category": "voice_recovery",
+          "description": "The historical approved representative WAV was lost during the ignored-state regression.",
+          "disposition": "accepted",
+          "agent_response": "The approved Piper Lessac model identity and approval record were preserved; all sections use that model and provider_text, with actual durations within \u00b115% of planned slots."
+        },
+        {
+          "id": "assets-003",
+          "severity": "nitpick",
+          "category": "scene_distinctness",
+          "description": "No two scenes share the same primary visual subject; repeated photos change semantic role and composition.",
+          "disposition": "accepted",
+          "agent_response": "Nine representative mid-scene stills confirm the scene inventory in art-direction.md and match the approved script/scene order."
+        }
+      ],
+      "metadata": {
+        "critical_findings": 0,
+        "verified_stock_assets": 6,
+        "narration_sections": 9,
+        "review_stills": 9,
+        "contact_sheet": "snapshots/assets-review-contact-sheet.jpg",
+        "audio_preview": "assets/review/assets-review-audio-preview.mp3",
+        "slideshow_risk": {
+          "average": 0.58,
+          "verdict": "strong"
+        },
+        "provider_spend_usd": 0,
+        "music_approval_required": false,
+        "music_approved": true,
+        "approval_verbatim": "Approve both"
+      }
+    },
     "contact_sheet": "snapshots/assets-review-contact-sheet.jpg",
     "audio_preview": "assets/review/assets-review-audio-preview.mp3",
-    "edit_decisions": "artifacts/edit_decisions.json",
-    "decision_log": "artifacts/decision-log.json",
+    "edit_decisions_path": "artifacts/edit_decisions.json",
     "art_direction": "art-direction.md",
     "props": "artifacts/props.json"
   },
   "review": {
-    "summary": "Batch assets complete: six verified stock photos, nine normalized Lessac narration sections, clause-aware captions, an original procedural music fallback candidate, and nine compiled representative atelier stills. Awaiting explicit approval before any video draft render.",
+    "summary": "The user approved the complete visual/narration batch and the project-original procedural music fallback. The exact reviewed assets are released to edit.",
     "previous_sample_approval_verbatim": "approve- **Approve both**",
+    "current_assets_and_music_approval_verbatim": "Approve both",
     "batch_generation_complete": true,
-    "music_fallback_requires_approval": true,
-    "full_video_render_started": false
+    "music_fallback_approved": true,
+    "full_video_render_started_before_approval": false
   },
   "cost_snapshot": {
     "total_spent_usd": 0,
@@ -32,6 +1011,7 @@
     "budget_remaining_usd": 2
   },
   "metadata": {
+    "normalized_via_checkpoint_writer": true,
     "reconstructed_after_ignored_state_loss": true,
     "browser_executable": "/tmp/chromium",
     "browser_library_path": "/tmp/al2023/lib",

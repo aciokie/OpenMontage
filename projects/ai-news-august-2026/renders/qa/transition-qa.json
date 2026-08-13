@@ -1,0 +1,55 @@
+{
+  "version": "1.0",
+  "boundaries_sampled": 8,
+  "black_frames_detected": false,
+  "samples": [
+    {
+      "boundary_seconds": 9,
+      "frame": "projects/ai-news-august-2026/renders/qa/boundary-1.png",
+      "normalized_luma_mean": 0.053,
+      "black_frame": false
+    },
+    {
+      "boundary_seconds": 23,
+      "frame": "projects/ai-news-august-2026/renders/qa/boundary-2.png",
+      "normalized_luma_mean": 0.053,
+      "black_frame": false
+    },
+    {
+      "boundary_seconds": 35,
+      "frame": "projects/ai-news-august-2026/renders/qa/boundary-3.png",
+      "normalized_luma_mean": 0.053,
+      "black_frame": false
+    },
+    {
+      "boundary_seconds": 44,
+      "frame": "projects/ai-news-august-2026/renders/qa/boundary-4.png",
+      "normalized_luma_mean": 0.053,
+      "black_frame": false
+    },
+    {
+      "boundary_seconds": 49,
+      "frame": "projects/ai-news-august-2026/renders/qa/boundary-5.png",
+      "normalized_luma_mean": 0.053,
+      "black_frame": false
+    },
+    {
+      "boundary_seconds": 65,
+      "frame": "projects/ai-news-august-2026/renders/qa/boundary-6.png",
+      "normalized_luma_mean": 0.053,
+      "black_frame": false
+    },
+    {
+      "boundary_seconds": 78,
+      "frame": "projects/ai-news-august-2026/renders/qa/boundary-7.png",
+      "normalized_luma_mean": 0.0561,
+      "black_frame": false
+    },
+    {
+      "boundary_seconds": 93,
+      "frame": "projects/ai-news-august-2026/renders/qa/boundary-8.png",
+      "normalized_luma_mean": 0.053,
+      "black_frame": false
+    }
+  ]
+}

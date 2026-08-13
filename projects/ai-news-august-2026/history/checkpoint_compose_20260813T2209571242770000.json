@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "project_id": "ai-news-august-2026",
+  "pipeline_type": "animated-explainer",
+  "stage": "compose",
+  "status": "failed",
+  "timestamp": "2026-08-13T22:09:57.124277+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {},
+  "cost_snapshot": {
+    "total_spent_usd": 0,
+    "total_reserved_usd": 0,
+    "budget_remaining_usd": 2
+  },
+  "error": "Atelier (bespoke) Remotion render failed: Command '['npx', 'remotion', 'render', '/home/user/OpenMontage/remotion-composer/projects/ai-news-august-2026/index.tsx', 'AiNewsAugust2026', '/home/user/OpenMontage/projects/ai-news-august-2026/renders/ai-news-august-2026-master.mp4', '--props=/home/user/OpenMontage/projects/ai-news-august-2026/artifacts/props.json', '--public-dir=/home/user/OpenMontage/projects/ai-news-august-2026/public', '--browser-executable=/tmp/chromium', '--scale=1.0', '--crf=18', '--concurrency=4']' returned non-zero exit status 1.\nError: concurrency is set higher than the amount of CPU cores available. Available CPU cores: 2, value set: 4\n    at Object.validateConcurrency (/home/user/OpenMontage/remotion-composer/node_modules/@remotion/renderer/dist/validate-concurrency.js:24:23)\n    at renderVideoFlow (/home/user/OpenMontage/remotion-composer/node_modules/@remotion/cli/dist/render-flows/render.js:66:32)\n    at render (/home/user/OpenMontage/remotion-composer/node_modules/@remotion/cli/dist/render.js:163:40)\n    at cli (/home/user/OpenMontage/remotion-composer/node_modules/@remotion/cli/dist/index.js:97:39)",
+  "metadata": {
+    "attempt": 1,
+    "phase": "render startup",
+    "cause": "Configured concurrency 4 exceeded the detected 2 CPU cores.",
+    "runtime_swap": false,
+    "output_created": false
+  }
+}

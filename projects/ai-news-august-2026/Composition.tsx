@@ -34,6 +34,9 @@ export interface SceneProps extends Record<string, unknown> {
   captions?: CaptionPage[];
   musicSrc?: string;
   musicEnabled?: boolean;
+  musicVolume?: number;
+  musicFadeInSeconds?: number;
+  musicFadeOutSeconds?: number;
 }
 
 type BeatProps = {duration: number};
@@ -743,10 +746,23 @@ const CaptionRail: React.FC<{pages: CaptionPage[]}> = ({pages}) => {
   );
 };
 
-const AudioMix: React.FC<Pick<SceneProps, "narration" | "musicSrc" | "musicEnabled">> = ({
+const AudioMix: React.FC<
+  Pick<
+    SceneProps,
+    | "narration"
+    | "musicSrc"
+    | "musicEnabled"
+    | "musicVolume"
+    | "musicFadeInSeconds"
+    | "musicFadeOutSeconds"
+  >
+> = ({
   narration = [],
   musicSrc = "",
   musicEnabled = false,
+  musicVolume = 0.16,
+  musicFadeInSeconds = 1.5,
+  musicFadeOutSeconds = 2,
 }) => {
   const {fps, durationInFrames} = useVideoConfig();
   return (
@@ -755,8 +771,12 @@ const AudioMix: React.FC<Pick<SceneProps, "narration" | "musicSrc" | "musicEnabl
         <Audio
           src={staticFile(musicSrc)}
           volume={(audioFrame) => {
-            const fadeIn = clamp(audioFrame, [0, fps * 2], [0, 0.16]);
-            const fadeOut = clamp(durationInFrames - audioFrame, [0, fps * 4], [0, 0.16]);
+            const fadeIn = clamp(audioFrame, [0, fps * musicFadeInSeconds], [0, musicVolume]);
+            const fadeOut = clamp(
+              durationInFrames - audioFrame,
+              [0, fps * musicFadeOutSeconds],
+              [0, musicVolume],
+            );
             return Math.min(fadeIn, fadeOut);
           }}
         />
@@ -782,7 +802,15 @@ const timeline = [
   {id: "scene-09", start: 93, end: 100, component: ClosingBeat},
 ];
 
-export const Scene: React.FC<SceneProps> = ({narration = [], captions = [], musicSrc = "", musicEnabled = false}) => {
+export const Scene: React.FC<SceneProps> = ({
+  narration = [],
+  captions = [],
+  musicSrc = "",
+  musicEnabled = false,
+  musicVolume = 0.16,
+  musicFadeInSeconds = 1.5,
+  musicFadeOutSeconds = 2,
+}) => {
   const {fps} = useVideoConfig();
   return (
     <AbsoluteFill style={{background: C.ink}}>
@@ -795,7 +823,14 @@ export const Scene: React.FC<SceneProps> = ({narration = [], captions = [], musi
           </Sequence>
         );
       })}
-      <AudioMix narration={narration} musicSrc={musicSrc} musicEnabled={musicEnabled} />
+      <AudioMix
+        narration={narration}
+        musicSrc={musicSrc}
+        musicEnabled={musicEnabled}
+        musicVolume={musicVolume}
+        musicFadeInSeconds={musicFadeInSeconds}
+        musicFadeOutSeconds={musicFadeOutSeconds}
+      />
       <CaptionRail pages={captions} />
     </AbsoluteFill>
   );

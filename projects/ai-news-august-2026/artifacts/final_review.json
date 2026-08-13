@@ -1,0 +1,113 @@
+{
+  "version": "1.0",
+  "output_path": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/ai-news-august-2026-master.mp4",
+  "status": "pass",
+  "checks": {
+    "technical_probe": {
+      "valid_container": true,
+      "duration_seconds": 100.05,
+      "resolution": "1920x1080",
+      "fps": 30.0,
+      "has_audio": true,
+      "codec": "h264",
+      "file_size_bytes": 47709521,
+      "issues": [],
+      "target_duration": 100.0,
+      "duration_drift_pct": 0.1
+    },
+    "visual_spotcheck": {
+      "frames_sampled": 9,
+      "frame_paths": [
+        "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s1.png",
+        "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s2.png",
+        "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s3.png",
+        "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s4.png",
+        "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s5.png",
+        "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s6.png",
+        "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s7.png",
+        "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s8.png",
+        "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s9.png"
+      ],
+      "black_frames_detected": false,
+      "broken_overlays": false,
+      "missing_assets": false,
+      "unreadable_text": false,
+      "issues": []
+    },
+    "audio_spotcheck": {
+      "narration_present": true,
+      "music_present": true,
+      "unexpected_silence": false,
+      "clipping_detected": false,
+      "mix_intelligible": true,
+      "issues": [],
+      "peak_dbfs": -4.023,
+      "rms_dbfs": -19.887,
+      "narration_window_mean_rms_dbfs": -19.58,
+      "music_only_gap_mean_rms_dbfs": -38.12,
+      "approved_preview_peak_delta_db": 0.303,
+      "approved_preview_rms_delta_db": 0.257,
+      "supplemental_qa_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/audio-qa.json"
+    },
+    "promise_preservation": {
+      "delivery_promise_honored": true,
+      "silent_downgrade_detected": false,
+      "runtime_swap_detected": false,
+      "issues": [],
+      "renderer_family_used": "documentary-montage",
+      "render_runtime_used": "remotion",
+      "runtime_swap_check": "ok \u2014 proposal and edit agree (proposal_packet.production_plan.render_runtime)",
+      "motion_ratio_actual": 0.0
+    },
+    "subtitle_check": {
+      "subtitles_expected": true,
+      "subtitles_present": true,
+      "issues": [],
+      "coverage_ratio": 1.0,
+      "timing_drift_detected": false,
+      "supplemental_qa_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/subtitle-qa.json",
+      "cue_count": 37,
+      "text_matches_governed_script": true,
+      "safe_placement_pass": true
+    },
+    "transcript_comparison": {
+      "transcript_matches_script": false,
+      "word_accuracy": null,
+      "script_word_count": 0,
+      "transcript_word_count": 0,
+      "spurious_punctuation_words": [],
+      "issues": [
+        "transcript_comparison skipped: narration_transcript not provided"
+      ]
+    },
+    "atelier": {
+      "stock_reuse_detected": false,
+      "offending_imports": [],
+      "art_direction_declared": true,
+      "art_direction": "/home/user/OpenMontage/projects/ai-news-august-2026/art-direction.md",
+      "issues": []
+    }
+  },
+  "issues_found": [
+    "transcript_comparison skipped: narration_transcript not provided"
+  ],
+  "recommended_action": "present_to_user",
+  "metadata": {
+    "reviewed_scene_contact_sheet": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/final-scene-contact-sheet.jpg",
+    "scene_frames_reviewed": 9,
+    "transition_qa_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/transition-qa.json",
+    "subtitle_qa_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/subtitle-qa.json",
+    "audio_qa_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/audio-qa.json",
+    "intentional_transition_design": "Each scene fades from the #071015 ink field over 8 frames and back over 7 frames; exact boundaries are dark editorial beats, not missing timeline content.",
+    "transcript_comparison_disposition": "Non-critical: the repository tool received no independent ASR transcript. The user approved the complete narrated review reel; all nine rendered source WAV durations match props, 37 caption cues exactly match the governed script, and supplemental PCM QA confirms narration, music, no clipping, and no unexpected silence.",
+    "atelier_motion_ratio_note": "The cut-schema motion-ratio heuristic reports 0.0 because atelier bypasses cut types. The rendered project is an animated Remotion composition; this heuristic is not an atelier-motion measurement.",
+    "governed_music_contract": {
+      "volume": 0.16,
+      "fade_in_seconds": 1.5,
+      "fade_out_seconds": 2.0,
+      "ducking_enabled": false
+    },
+    "post_render_review_recovery_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/artifacts/video-compose-review-recovery.json",
+    "output_sha256": "c5559316b32b175f0f1834c4f34edccd423f523c274c1eec084dceb019b7f1f4"
+  }
+}

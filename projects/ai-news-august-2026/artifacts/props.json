@@ -282,5 +282,8 @@
     }
   ],
   "musicSrc": "audio/music/procedural-signal-current-114bpm.mp3",
-  "musicEnabled": false
+  "musicEnabled": true,
+  "musicVolume": 0.16,
+  "musicFadeInSeconds": 1.5,
+  "musicFadeOutSeconds": 2.0
 }

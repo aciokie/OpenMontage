@@ -1,0 +1,56 @@
+{
+  "publish_log": {
+    "version": "1.0",
+    "entries": [
+      {
+        "platform": "youtube",
+        "status": "exported",
+        "export_path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports",
+        "timestamp": "2026-08-13T22:29:58.133677+00:00",
+        "metadata_used": {
+          "title": "AI News August 2026: Cheaper Models, Bigger Stakes",
+          "description": "AI is getting cheaper to use\u2014and more consequential to govern. This 100-second AI news briefing covers OpenAI\u2019s GPT-5.6 Sol and Luna access changes, Meta\u2019s Muse Glimmer laptop models and Muse Spark 1.2 open weights, NVIDIA and partners\u2019 non-binding plan intended to mobilize more than $500 billion for AI infrastructure, the EU AI Act\u2019s transparency requirements, and an autonomous-agent security incident in Australia.\n\nThe through-line: capability is moving outward to more people and devices, while capital, compliance, and security pressure concentrate around the systems behind it.\n\nSources checked August 14, 2026:\nOpenAI \u2014 https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/\nCNBC \u2014 https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html\nNVIDIA Newsroom \u2014 https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital\nEuropean Commission \u2014 https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714\nABC News Australia \u2014 https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986\n\nSubscribe or follow for concise, sourced AI news briefings.",
+          "hashtags": [
+            "#AINews",
+            "#ArtificialIntelligence",
+            "#OpenAI",
+            "#EUAIAct",
+            "#AIAgents"
+          ],
+          "chapters": [
+            {
+              "start_seconds": 0,
+              "title": "AI in two directions\u2014and OpenAI access"
+            },
+            {
+              "start_seconds": 23,
+              "title": "Meta moves AI local and open weight"
+            },
+            {
+              "start_seconds": 44,
+              "title": "Physical compute and the $500B-plus plan"
+            },
+            {
+              "start_seconds": 65,
+              "title": "EU AI Act transparency rules"
+            },
+            {
+              "start_seconds": 78,
+              "title": "Autonomous-agent security and bigger stakes"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "export_path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports",
+  "files_written": [
+    "/home/user/OpenMontage/projects/ai-news-august-2026/exports/video/output.mp4",
+    "/home/user/OpenMontage/projects/ai-news-august-2026/exports/video/subtitles.srt",
+    "/home/user/OpenMontage/projects/ai-news-august-2026/exports/metadata/metadata.json",
+    "/home/user/OpenMontage/projects/ai-news-august-2026/exports/metadata/description.txt",
+    "/home/user/OpenMontage/projects/ai-news-august-2026/exports/metadata/tags.txt",
+    "/home/user/OpenMontage/projects/ai-news-august-2026/exports/metadata/chapters.txt",
+    "/home/user/OpenMontage/projects/ai-news-august-2026/exports/thumbnails/concept.json"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "status": "pass",
+  "subtitle_path": "/home/user/OpenMontage/projects/ai-news-august-2026/assets/subtitles/ai-news-august-2026.srt",
+  "burned_caption_source": "artifacts/props.json captions",
+  "cue_count": 37,
+  "expected_cue_count": 37,
+  "first_cue_start_seconds": 0.35,
+  "last_cue_end_seconds": 99.214,
+  "video_duration_seconds": 100.053333,
+  "final_coverage_tail_seconds": 0.839,
+  "indices_contiguous": true,
+  "positive_durations": true,
+  "timing_monotonic": true,
+  "no_overlaps": true,
+  "srt_timing_matches_burned_caption_props": true,
+  "srt_text_matches_burned_caption_props": true,
+  "normalized_caption_text_matches_governed_script": true,
+  "longest_cue_characters": 68,
+  "shortest_cue_duration_seconds": 1.04,
+  "largest_intercue_gap_seconds": 1.245,
+  "safe_placement": {
+    "pass": true,
+    "frame_size": "1920x1080",
+    "left_right_margin_pixels": 330,
+    "caption_panel_bottom_margin_pixels": 34,
+    "minimum_text_to_bottom_edge_pixels": 51,
+    "panel_max_width_pixels": 1260,
+    "font": "600 31px/1.18 Arial",
+    "basis": "Caption glyphs remain fully in-frame with approximately 4.7% minimum vertical glyph margin, 17.2% horizontal margins, an opaque high-contrast backing panel, and no clipping in nine full-resolution scene samples."
+  },
+  "checks_passed": true
+}

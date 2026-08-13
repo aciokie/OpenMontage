@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "status": "pass",
+  "timestamp": "2026-08-14T06:30:00+08:00",
+  "validator": "composition_validator",
+  "composition_mode": "atelier",
+  "render_runtime": "remotion",
+  "errors": [],
+  "warnings": [],
+  "info": [
+    "Video duration: 100.0s (atelier props; 9 narration segments)",
+    "Render runtime: remotion; assets root: /home/user/OpenMontage/projects/ai-news-august-2026/public",
+    "Narration s1: 8.104s (declared 8.104s)",
+    "Narration s2: 13.514s (declared 13.514s)",
+    "Narration s3: 11.355s (declared 11.355s)",
+    "Narration s4: 7.755s (declared 7.755s)",
+    "Narration s5: 4.447s (declared 4.447s)",
+    "Narration s6: 15.337s (declared 15.337s)",
+    "Narration s7: 13.096s (declared 13.096s)",
+    "Narration s8: 14.396s (declared 14.396s)",
+    "Narration s9: 6.014s (declared 6.014s)",
+    "Music duration: 104.0s"
+  ],
+  "governed_music_contract": {
+    "volume": 0.16,
+    "fade_in_seconds": 1.5,
+    "fade_out_seconds": 2.0,
+    "ducking_enabled": false
+  },
+  "revision_reason": "Corrected atelier music-envelope parameters to match approved edit_decisions before replacement render."
+}

@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "stage": "edit",
+  "round": 1,
+  "findings": [
+    {
+      "id": "edit-001",
+      "severity": "suggestion",
+      "category": "runtime_capacity",
+      "description": "The initial concurrency setting of 4 exceeded the renderer\u2019s detected 2-core capacity.",
+      "disposition": "accepted",
+      "agent_response": "Reduced only the execution concurrency to 2. The approved Remotion runtime, composition, assets, timing, resolution, CRF, and creative treatment are unchanged; attempt 1 rendered no frames."
+    }
+  ],
+  "metadata": {
+    "status": "pass",
+    "critical_findings": 0,
+    "cuts": 9,
+    "timeline_start_seconds": 0.0,
+    "timeline_end_seconds": 100.0,
+    "gaps": 0,
+    "overlaps": 0,
+    "all_cut_sources_in_manifest": true,
+    "subtitles_enabled": true,
+    "caption_pages": 37,
+    "music_enabled_after_approval": true,
+    "music_volume": 0.16,
+    "music_fade_in_seconds": 1.5,
+    "music_fade_out_seconds": 2.0,
+    "ducking_parameters_recorded": true,
+    "ducking_enabled": false,
+    "ducking_reason": "The user approved the exact pre-balanced 16% review mix; no post-approval dynamic level change was introduced.",
+    "runtime_contract_preserved": true,
+    "composition_mode_contract_preserved": true,
+    "render_concurrency": 2,
+    "revision_round": 2
+  }
+}

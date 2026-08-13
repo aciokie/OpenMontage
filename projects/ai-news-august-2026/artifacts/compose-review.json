@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "stage": "compose",
+  "round": 2,
+  "findings": [
+    {
+      "id": "compose-003",
+      "severity": "suggestion",
+      "category": "audio_contract",
+      "description": "Final packaging audit found that the first accepted MP4 used atelier-hardcoded 2.0s/4.0s music fades rather than the approved 1.5s/2.0s edit values.",
+      "disposition": "accepted",
+      "agent_response": "Exposed volume and fade values as composition props, set them to the governed 0.16/1.5s/2.0s values, passed zero-warning preflight, rendered a replacement master, and reran audio/visual/transition/subtitle QA."
+    },
+    {
+      "id": "compose-004",
+      "severity": "suggestion",
+      "category": "tool_environment",
+      "description": "The replacement render wrote a complete MP4, but the wrapper post-check could not discover ffprobe on PATH and therefore returned failure after rendering.",
+      "disposition": "accepted",
+      "agent_response": "Reran the identical VideoCompose final-review method with the repository-bundled ffprobe on PATH. The replacement MP4 passed technical review and independent ffprobe; the recovery and raw result are both retained."
+    },
+    {
+      "id": "compose-005",
+      "severity": "suggestion",
+      "category": "transcript_verification",
+      "description": "The automated post-render reviewer had no independent ASR transcript for word-level transcript comparison.",
+      "disposition": "accepted",
+      "agent_response": "Retained this limitation. It does not block delivery because the complete narrated review reel was approved, all nine source WAVs match exact governed durations, all 37 caption cues exactly match the script, and PCM QA confirms narration, music, headroom, and continuity."
+    },
+    {
+      "id": "compose-006",
+      "severity": "nitpick",
+      "category": "transition_design",
+      "description": "At each exact scene boundary, the composition reaches the dark ink field before the next scene fades in.",
+      "disposition": "accepted",
+      "agent_response": "This is the authored 8-frame-in/7-frame-out editorial dip-to-ink, not a gap. All eight boundary frames are non-black #071015 ink and timeline timing is continuous."
+    }
+  ],
+  "metadata": {
+    "status": "pass",
+    "critical_findings": 0,
+    "unresolved_findings": 0,
+    "suggestions": 3,
+    "nitpicks": 1,
+    "output_playable": true,
+    "duration_within_five_percent": true,
+    "audio_clear_and_balanced": true,
+    "subtitle_contract_passed": true,
+    "runtime_contract_preserved": true,
+    "music_contract_preserved": true,
+    "final_review_status": "pass",
+    "recommended_action": "present_to_user"
+  }
+}

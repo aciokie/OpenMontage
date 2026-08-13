@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "stage": "publish",
+  "round": 1,
+  "findings": [],
+  "metadata": {
+    "status": "pass",
+    "critical_findings": 0,
+    "unresolved_findings": 0,
+    "seo_quality_score": 5,
+    "description_completeness_score": 5,
+    "thumbnail_concept_score": 4,
+    "export_package_score": 5,
+    "platform_fit_score": 5,
+    "title_characters": 50,
+    "source_links": 5,
+    "chapters": 5,
+    "minimum_chapter_duration_seconds": 13,
+    "tags": 10,
+    "hashtags": 5,
+    "required_export_files": 7,
+    "video_matches_approved_master": true,
+    "subtitles_included": true,
+    "thumbnail_concept_included": true,
+    "network_upload_performed": false,
+    "recommended_action": "await_human_publish_approval"
+  }
+}

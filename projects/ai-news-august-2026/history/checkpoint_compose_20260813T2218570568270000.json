@@ -1,0 +1,249 @@
+{
+  "version": "1.0",
+  "project_id": "ai-news-august-2026",
+  "pipeline_type": "animated-explainer",
+  "stage": "compose",
+  "status": "completed",
+  "timestamp": "2026-08-13T22:18:57.056827+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {
+    "render_report": {
+      "version": "1.0",
+      "outputs": [
+        {
+          "path": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/ai-news-august-2026-master.mp4",
+          "format": "mp4",
+          "codec": "h264",
+          "audio_codec": "aac",
+          "resolution": "1920x1080",
+          "fps": 30.0,
+          "duration_seconds": 100.053333,
+          "file_size_bytes": 47709521,
+          "platform_target": "youtube_landscape"
+        }
+      ],
+      "render_time_seconds": 349.71,
+      "warnings": [
+        "Independent ASR transcript comparison was not run; the approved narration reel, exact source-WAV timings, captions, and PCM output analysis provide the retained audio verification trail."
+      ],
+      "verification_notes": [
+        "Pre-render CompositionValidator passed with 0 errors and 0 warnings for all 9 narration assets, 37 captions, and the 104-second music bed.",
+        "Actual output passed ffprobe: H.264/AAC, 1920x1080, 30 fps, 100.053 seconds, with a valid audio stream.",
+        "Nine scene-midpoint frames were inspected at full resolution; no missing stock assets, broken overlays, black scenes, or unreadable primary text were found.",
+        "All 8 scene boundaries were sampled; the intentional 8-frame/7-frame dip-to-ink transition is present with no missing timeline intervals.",
+        "PCM audio QA: peak -4.023 dBFS, RMS -19.887 dBFS, 0 clipped samples, no >750 ms silence below -50 dBFS.",
+        "Narration averages -19.58 dBFS while music-only gaps average -39.67 dBFS, preserving intelligibility.",
+        "The final mix peak/RMS are within 0.31 dB of the user-approved review reel.",
+        "Remotion runtime and atelier composition mode match the approved proposal; no silent runtime swap occurred."
+      ],
+      "render_grammar": "documentary-montage",
+      "slideshow_risk_score": {
+        "average": 0.58,
+        "verdict": "strong"
+      },
+      "decision_log_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/decision_log.json",
+      "final_review_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/artifacts/final_review.json",
+      "metadata": {
+        "composition_mode": "atelier",
+        "composition_id": "AiNewsAugust2026",
+        "render_runtime": "remotion",
+        "render_attempt": 2,
+        "attempt_1_disposition": "Startup rejected concurrency 4 before frames; corrected to detected 2-core capacity without changing runtime or creative output.",
+        "render_concurrency": 2,
+        "browser_executable": "/tmp/chromium",
+        "pre_render_validation_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/artifacts/pre-render-validation.json",
+        "compose_result_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/artifacts/video-compose-result.json",
+        "visual_qa_contact_sheet": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/final-scene-contact-sheet.jpg",
+        "audio_qa_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/audio-qa.json",
+        "transition_qa_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/transition-qa.json",
+        "output_sha256": "470cc5e9ce6a18c308cf6acd188bec2534763617c2be633652e4c669d6affe1d",
+        "provider_spend_usd": 0
+      }
+    },
+    "final_review": {
+      "version": "1.0",
+      "output_path": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/ai-news-august-2026-master.mp4",
+      "status": "pass",
+      "checks": {
+        "technical_probe": {
+          "valid_container": true,
+          "duration_seconds": 100.05,
+          "resolution": "1920x1080",
+          "fps": 30.0,
+          "has_audio": true,
+          "codec": "h264",
+          "file_size_bytes": 47709521,
+          "issues": [],
+          "target_duration": 100.0,
+          "duration_drift_pct": 0.1
+        },
+        "visual_spotcheck": {
+          "frames_sampled": 9,
+          "frame_paths": [
+            "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s1.png",
+            "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s2.png",
+            "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s3.png",
+            "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s4.png",
+            "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s5.png",
+            "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s6.png",
+            "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s7.png",
+            "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s8.png",
+            "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/scene-s9.png"
+          ],
+          "black_frames_detected": false,
+          "broken_overlays": false,
+          "missing_assets": false,
+          "unreadable_text": false,
+          "issues": []
+        },
+        "audio_spotcheck": {
+          "narration_present": true,
+          "music_present": true,
+          "unexpected_silence": false,
+          "clipping_detected": false,
+          "mix_intelligible": true,
+          "issues": [],
+          "peak_dbfs": -4.023,
+          "rms_dbfs": -19.887,
+          "narration_window_mean_rms_dbfs": -19.58,
+          "music_only_gap_mean_rms_dbfs": -39.67,
+          "approved_preview_peak_delta_db": 0.303,
+          "approved_preview_rms_delta_db": 0.257,
+          "supplemental_qa_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/audio-qa.json"
+        },
+        "promise_preservation": {
+          "delivery_promise_honored": true,
+          "silent_downgrade_detected": false,
+          "runtime_swap_detected": false,
+          "issues": [],
+          "renderer_family_used": "documentary-montage",
+          "render_runtime_used": "remotion",
+          "runtime_swap_check": "ok \u2014 proposal and edit agree (proposal_packet.production_plan.render_runtime)",
+          "motion_ratio_actual": 0.0
+        },
+        "subtitle_check": {
+          "subtitles_expected": true,
+          "subtitles_present": true,
+          "issues": [],
+          "coverage_ratio": 1.0,
+          "timing_drift_detected": false
+        },
+        "transcript_comparison": {
+          "transcript_matches_script": false,
+          "word_accuracy": null,
+          "script_word_count": 0,
+          "transcript_word_count": 0,
+          "spurious_punctuation_words": [],
+          "issues": [
+            "transcript_comparison skipped: narration_transcript not provided"
+          ]
+        },
+        "atelier": {
+          "stock_reuse_detected": false,
+          "offending_imports": [],
+          "art_direction_declared": true,
+          "art_direction": "/home/user/OpenMontage/projects/ai-news-august-2026/art-direction.md",
+          "issues": []
+        }
+      },
+      "issues_found": [
+        "transcript_comparison skipped: narration_transcript not provided"
+      ],
+      "recommended_action": "present_to_user",
+      "metadata": {
+        "reviewed_scene_contact_sheet": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/final-scene-contact-sheet.jpg",
+        "scene_frames_reviewed": 9,
+        "transition_qa_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/transition-qa.json",
+        "intentional_transition_design": "Each scene fades from the #071015 ink field over 8 frames and back over 7 frames; exact boundaries are dark editorial beats, not missing timeline content.",
+        "audio_qa_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/qa/audio-qa.json",
+        "transcript_comparison_disposition": "Non-critical: the repository tool received no independent ASR transcript. The user approved the complete narrated review reel; all nine rendered source WAV durations match props, the caption schedule covers the script, and supplemental PCM QA confirms narration, music, no clipping, and no unexpected silence.",
+        "atelier_motion_ratio_note": "The cut-schema motion-ratio heuristic reports 0.0 because atelier bypasses cut types. The rendered project is an animated Remotion composition; this heuristic is not an atelier-motion measurement.",
+        "output_sha256": "470cc5e9ce6a18c308cf6acd188bec2534763617c2be633652e4c669d6affe1d"
+      }
+    },
+    "compose_review": {
+      "version": "1.0",
+      "stage": "compose",
+      "round": 1,
+      "findings": [
+        {
+          "id": "compose-001",
+          "severity": "suggestion",
+          "category": "transcript_verification",
+          "description": "The automated post-render reviewer had no independent ASR transcript for a word-level transcript-to-script comparison.",
+          "disposition": "accepted",
+          "agent_response": "Retained this limitation in final_review and render_report. It does not block delivery because the user approved the complete narrated review reel, all nine source WAVs match governed durations, 37 burned caption cues cover the script through 99.214s, and output PCM QA confirms narration, music, headroom, and continuity."
+        },
+        {
+          "id": "compose-002",
+          "severity": "nitpick",
+          "category": "transition_design",
+          "description": "At each exact scene boundary, the composition reaches the dark ink field before the next scene fades in.",
+          "disposition": "accepted",
+          "agent_response": "This is the authored 8-frame-in/7-frame-out editorial dip-to-ink, not a gap. All eight boundary frames are non-black #071015 ink, timing remains continuous, and visual content recovers within 0.267 seconds."
+        }
+      ],
+      "metadata": {
+        "status": "pass",
+        "critical_findings": 0,
+        "suggestions": 1,
+        "nitpicks": 1,
+        "output_playable": true,
+        "duration_within_five_percent": true,
+        "audio_clear_and_balanced": true,
+        "runtime_contract_preserved": true,
+        "final_review_status": "pass",
+        "recommended_action": "present_to_user"
+      }
+    }
+  },
+  "review": {
+    "version": "1.0",
+    "stage": "compose",
+    "round": 1,
+    "findings": [
+      {
+        "id": "compose-001",
+        "severity": "suggestion",
+        "category": "transcript_verification",
+        "description": "The automated post-render reviewer had no independent ASR transcript for a word-level transcript-to-script comparison.",
+        "disposition": "accepted",
+        "agent_response": "Retained this limitation in final_review and render_report. It does not block delivery because the user approved the complete narrated review reel, all nine source WAVs match governed durations, 37 burned caption cues cover the script through 99.214s, and output PCM QA confirms narration, music, headroom, and continuity."
+      },
+      {
+        "id": "compose-002",
+        "severity": "nitpick",
+        "category": "transition_design",
+        "description": "At each exact scene boundary, the composition reaches the dark ink field before the next scene fades in.",
+        "disposition": "accepted",
+        "agent_response": "This is the authored 8-frame-in/7-frame-out editorial dip-to-ink, not a gap. All eight boundary frames are non-black #071015 ink, timing remains continuous, and visual content recovers within 0.267 seconds."
+      }
+    ],
+    "metadata": {
+      "status": "pass",
+      "critical_findings": 0,
+      "suggestions": 1,
+      "nitpicks": 1,
+      "output_playable": true,
+      "duration_within_five_percent": true,
+      "audio_clear_and_balanced": true,
+      "runtime_contract_preserved": true,
+      "final_review_status": "pass",
+      "recommended_action": "present_to_user"
+    }
+  },
+  "cost_snapshot": {
+    "total_spent_usd": 0,
+    "total_reserved_usd": 0,
+    "budget_remaining_usd": 2
+  },
+  "metadata": {
+    "automatic_stage": true,
+    "render_runtime": "remotion",
+    "composition_mode": "atelier",
+    "final_review_status": "pass",
+    "output_sha256": "470cc5e9ce6a18c308cf6acd188bec2534763617c2be633652e4c669d6affe1d"
+  }
+}

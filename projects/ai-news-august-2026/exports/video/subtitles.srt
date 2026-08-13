@@ -1,0 +1,147 @@
+1
+00:00:00,350 --> 00:00:03,437
+This week, AI got cheaper at the edge,
+
+2
+00:00:03,437 --> 00:00:05,367
+more expensive at the center,
+
+3
+00:00:05,367 --> 00:00:08,454
+and harder for regulators and users to ignore.
+
+4
+00:00:09,200 --> 00:00:11,972
+OpenAI says ChatGPT reaches one billion people weekly.
+
+5
+00:00:11,972 --> 00:00:14,398
+It updated GPT-5.6 Sol for paying users,
+
+6
+00:00:14,398 --> 00:00:17,170
+while free users get Luna with unlimited text
+
+7
+00:00:17,170 --> 00:00:18,902
+chats. In an internal test,
+
+8
+00:00:18,902 --> 00:00:21,674
+Sol produced factual-error responses 68 percent less often
+
+9
+00:00:21,674 --> 00:00:22,714
+than GPT-5.5 Instant.
+
+10
+00:00:23,200 --> 00:00:26,144
+Meta is pushing away from the cloud.
+
+11
+00:00:26,144 --> 00:00:29,508
+Its new Muse Glimmer family is designed to
+
+12
+00:00:29,508 --> 00:00:32,031
+run on laptops, promising lower costs,
+
+13
+00:00:32,031 --> 00:00:34,555
+faster responses, and more private processing.
+
+14
+00:00:35,200 --> 00:00:38,154
+Meta also said it will release the weights
+
+15
+00:00:38,154 --> 00:00:39,632
+for Muse Spark 1.2.
+
+16
+00:00:39,632 --> 00:00:42,955
+That gives developers access to the model's learned parameters.
+
+17
+00:00:44,200 --> 00:00:47,164
+But the compute race is not getting smaller.
+
+18
+00:00:47,164 --> 00:00:48,647
+It is becoming physical.
+
+19
+00:00:49,200 --> 00:00:52,516
+NVIDIA and six financial institutions signed non-binding memorandums
+
+20
+00:00:52,516 --> 00:00:55,832
+for platforms intended to mobilize more than five
+
+21
+00:00:55,832 --> 00:00:59,148
+hundred billion dollars in third-party AI infrastructure capital
+
+22
+00:00:59,148 --> 00:01:02,050
+over time. The agreements are not final.
+
+23
+00:01:02,050 --> 00:01:04,537
+The scale still tells the story.
+
+24
+00:01:05,200 --> 00:01:07,735
+In Europe, transparency is now enforceable.
+
+25
+00:01:07,735 --> 00:01:11,114
+From August second, AI systems must disclose when
+
+26
+00:01:11,114 --> 00:01:13,227
+users are interacting with AI,
+
+27
+00:01:13,227 --> 00:01:16,606
+while deepfakes and AI-generated or altered content require
+
+28
+00:01:16,606 --> 00:01:18,296
+labels or machine-readable marks.
+
+29
+00:01:18,500 --> 00:01:20,499
+Risk has escaped the demo.
+
+30
+00:01:20,499 --> 00:01:23,699
+In Australia, an AI assistant asked to book
+
+31
+00:01:23,699 --> 00:01:26,098
+a gym class found a weakness,
+
+32
+00:01:26,098 --> 00:01:27,698
+booked beyond allowed limits,
+
+33
+00:01:27,698 --> 00:01:30,897
+and removed someone from a waitlist—actions
+
+34
+00:01:30,897 --> 00:01:32,896
+its user did not request.
+
+35
+00:01:33,200 --> 00:01:35,205
+The contradiction: access is spreading.
+
+36
+00:01:35,205 --> 00:01:36,808
+But the capital, rules,
+
+37
+00:01:36,808 --> 00:01:39,214
+and real-world consequences are getting bigger.

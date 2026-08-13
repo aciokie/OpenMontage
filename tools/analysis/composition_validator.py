@@ -155,32 +155,97 @@ class CompositionValidator(BaseTool):
 
         cuts = comp.get("cuts", [])
         audio = comp.get("audio", {})
+        atelier_props = (
+            not cuts
+            and isinstance(comp.get("narration"), list)
+            and "totalSeconds" in comp
+        )
 
-        # --- Check 1: Cuts exist ---
-        if not cuts:
-            errors.append("No cuts defined in composition")
+        # --- Check 1: A supported timeline exists ---
+        if not cuts and not atelier_props:
+            errors.append(
+                "No cuts defined and composition is not an atelier props payload "
+                "(expected totalSeconds plus a narration array)"
+            )
             return self._result(errors, warnings, info, start)
 
         # --- Check 2: Video duration ---
-        video_duration = 0.0
-        for cut in cuts:
-            out_s = cut.get("out_seconds", 0)
-            if out_s > video_duration:
-                video_duration = out_s
-        info.append(f"Video duration: {video_duration}s ({len(cuts)} cuts)")
+        if atelier_props:
+            try:
+                video_duration = float(comp.get("totalSeconds", 0))
+            except (TypeError, ValueError):
+                video_duration = 0.0
+            if video_duration <= 0:
+                errors.append("Atelier totalSeconds must be a positive number")
+            fps = comp.get("fps")
+            if not isinstance(fps, (int, float)) or fps <= 0:
+                errors.append("Atelier fps must be a positive number")
+            info.append(
+                f"Video duration: {video_duration}s (atelier props; "
+                f"{len(comp.get('narration', []))} narration segments)"
+            )
+        else:
+            video_duration = 0.0
+            for cut in cuts:
+                out_s = cut.get("out_seconds", 0)
+                if out_s > video_duration:
+                    video_duration = out_s
+            info.append(f"Video duration: {video_duration}s ({len(cuts)} cuts)")
         info.append(f"Render runtime: {runtime or 'default (remotion)'}; assets root: {assets_root}")
 
-        # --- Check 3: Cut ordering and gaps ---
-        sorted_cuts = sorted(cuts, key=lambda c: c.get("in_seconds", 0))
-        for i, cut in enumerate(sorted_cuts):
-            in_s = cut.get("in_seconds", 0)
-            out_s = cut.get("out_seconds", 0)
-            if out_s <= in_s:
-                errors.append(
-                    f"Cut '{cut.get('id', i)}': out_seconds ({out_s}) <= in_seconds ({in_s})"
-                )
+        # --- Check 3: Cut/atelier timeline ordering ---
+        if atelier_props:
+            narration_segments = sorted(
+                comp.get("narration", []), key=lambda s: s.get("startSeconds", 0)
+            )
+            for i, segment in enumerate(narration_segments):
+                start_s = segment.get("startSeconds", 0)
+                duration_s = segment.get("durationSeconds", 0)
+                if not isinstance(start_s, (int, float)) or start_s < 0:
+                    errors.append(
+                        f"Narration '{segment.get('id', i)}': invalid startSeconds ({start_s})"
+                    )
+                    continue
+                if not isinstance(duration_s, (int, float)) or duration_s <= 0:
+                    errors.append(
+                        f"Narration '{segment.get('id', i)}': invalid durationSeconds ({duration_s})"
+                    )
+                    continue
+                if start_s + duration_s > video_duration + 0.05:
+                    errors.append(
+                        f"Narration '{segment.get('id', i)}' ends at "
+                        f"{start_s + duration_s:.3f}s, after video end {video_duration:.3f}s"
+                    )
 
-        # --- Check 4: Asset files exist ---
+            captions = sorted(
+                comp.get("captions", []), key=lambda c: c.get("startSeconds", 0)
+            )
+            for i, caption in enumerate(captions):
+                start_s = caption.get("startSeconds", 0)
+                end_s = caption.get("endSeconds", 0)
+                if not isinstance(start_s, (int, float)) or not isinstance(end_s, (int, float)):
+                    errors.append(f"Caption '{caption.get('id', i)}' has non-numeric timing")
+                elif end_s <= start_s:
+                    errors.append(
+                        f"Caption '{caption.get('id', i)}': endSeconds ({end_s}) "
+                        f"<= startSeconds ({start_s})"
+                    )
+                elif end_s > video_duration + 0.05:
+                    errors.append(
+                        f"Caption '{caption.get('id', i)}' ends at {end_s:.3f}s, "
+                        f"after video end {video_duration:.3f}s"
+                    )
+        else:
+            sorted_cuts = sorted(cuts, key=lambda c: c.get("in_seconds", 0))
+            for i, cut in enumerate(sorted_cuts):
+                in_s = cut.get("in_seconds", 0)
+                out_s = cut.get("out_seconds", 0)
+                if out_s <= in_s:
+                    errors.append(
+                        f"Cut '{cut.get('id', i)}': out_seconds ({out_s}) <= in_seconds ({in_s})"
+                    )
+
+        # --- Check 4: Visual asset files exist (cut-schema compositions) ---
         for cut in cuts:
             source = cut.get("source", "")
             if source:
@@ -195,33 +260,65 @@ class CompositionValidator(BaseTool):
                     errors.append(f"Missing background image: {bg_img}")
 
         # --- Check 5: Narration duration vs video duration ---
-        narration = audio.get("narration", {})
-        narration_src = narration.get("src", "")
-        if narration_src:
-            narration_path = assets_root / narration_src
-            if not narration_path.exists():
-                errors.append(f"Missing narration audio: {narration_src}")
-            else:
+        narration_present = False
+        if atelier_props:
+            for i, segment in enumerate(comp.get("narration", [])):
+                narration_src = segment.get("src", "")
+                segment_id = segment.get("id", i)
+                if not narration_src:
+                    errors.append(f"Narration '{segment_id}' has no src")
+                    continue
+                narration_present = True
+                narration_path = assets_root / narration_src
+                if not narration_path.exists():
+                    errors.append(f"Missing narration audio: {narration_src}")
+                    continue
                 narration_dur = probe_duration(narration_path)
-                if narration_dur is not None:
-                    info.append(f"Narration duration: {narration_dur:.1f}s")
-                    overshoot = narration_dur - video_duration
-                    if overshoot > 1.0:
-                        errors.append(
-                            f"Narration ({narration_dur:.1f}s) exceeds video ({video_duration}s) "
-                            f"by {overshoot:.1f}s — audio will be cut off"
-                        )
-                    elif overshoot > 0:
-                        warnings.append(
-                            f"Narration ({narration_dur:.1f}s) slightly exceeds video ({video_duration}s) "
-                            f"by {overshoot:.1f}s"
-                        )
-                else:
+                declared_dur = segment.get("durationSeconds")
+                if narration_dur is None:
                     warnings.append(f"Could not probe narration duration: {narration_src}")
+                elif isinstance(declared_dur, (int, float)):
+                    info.append(
+                        f"Narration {segment_id}: {narration_dur:.3f}s "
+                        f"(declared {declared_dur:.3f}s)"
+                    )
+                    if abs(narration_dur - declared_dur) > 0.25:
+                        warnings.append(
+                            f"Narration '{segment_id}' probed duration ({narration_dur:.3f}s) "
+                            f"differs from declared duration ({declared_dur:.3f}s)"
+                        )
+        else:
+            narration = audio.get("narration", {})
+            narration_src = narration.get("src", "")
+            narration_present = bool(narration_src)
+            if narration_src:
+                narration_path = assets_root / narration_src
+                if not narration_path.exists():
+                    errors.append(f"Missing narration audio: {narration_src}")
+                else:
+                    narration_dur = probe_duration(narration_path)
+                    if narration_dur is not None:
+                        info.append(f"Narration duration: {narration_dur:.1f}s")
+                        overshoot = narration_dur - video_duration
+                        if overshoot > 1.0:
+                            errors.append(
+                                f"Narration ({narration_dur:.1f}s) exceeds video ({video_duration}s) "
+                                f"by {overshoot:.1f}s — audio will be cut off"
+                            )
+                        elif overshoot > 0:
+                            warnings.append(
+                                f"Narration ({narration_dur:.1f}s) slightly exceeds video ({video_duration}s) "
+                                f"by {overshoot:.1f}s"
+                            )
+                    else:
+                        warnings.append(f"Could not probe narration duration: {narration_src}")
 
         # --- Check 6: Music duration ---
-        music = audio.get("music", {})
-        music_src = music.get("src", "")
+        if atelier_props:
+            music_src = comp.get("musicSrc", "") if comp.get("musicEnabled") else ""
+        else:
+            music = audio.get("music", {})
+            music_src = music.get("src", "")
         if music_src:
             music_path = assets_root / music_src
             if not music_path.exists():
@@ -237,7 +334,7 @@ class CompositionValidator(BaseTool):
                         )
 
         # --- Check 7: No audio at all ---
-        if not narration_src and not music_src:
+        if not narration_present and not music_src:
             warnings.append("No audio configured (no narration or music)")
 
         return self._result(errors, warnings, info, start)

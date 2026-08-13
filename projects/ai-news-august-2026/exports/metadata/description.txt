@@ -1,0 +1,18 @@
+AI is getting cheaper to use—and more consequential to govern. This 100-second AI news briefing covers OpenAI’s GPT-5.6 Sol and Luna access changes, Meta’s Muse Glimmer laptop models and Muse Spark 1.2 open weights, NVIDIA and partners’ non-binding plan intended to mobilize more than $500 billion for AI infrastructure, the EU AI Act’s transparency requirements, and an autonomous-agent security incident in Australia.
+
+The through-line: capability is moving outward to more people and devices, while capital, compliance, and security pressure concentrate around the systems behind it.
+
+Sources checked August 14, 2026:
+OpenAI — https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/
+CNBC — https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html
+NVIDIA Newsroom — https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital
+European Commission — https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714
+ABC News Australia — https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986
+
+Subscribe or follow for concise, sourced AI news briefings.
+
+0:00 - AI in two directions—and OpenAI access
+0:23 - Meta moves AI local and open weight
+0:44 - Physical compute and the $500B-plus plan
+1:05 - EU AI Act transparency rules
+1:18 - Autonomous-agent security and bigger stakes

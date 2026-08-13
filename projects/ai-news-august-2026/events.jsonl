@@ -11,3 +11,15 @@
 {"ts": "2026-08-14T08:12:00+00:00", "tool": "asset_batch", "event": "finish", "success": true, "stock_assets": 6, "narration_sections": 9, "cost_usd": 0}
 {"ts": "2026-08-14T08:18:00+00:00", "tool": "atelier_snapshots", "event": "finish", "success": true, "review_stills": 9, "full_video_rendered": false, "cost_usd": 0}
 {"ts": "2026-08-14T08:20:00+00:00", "tool": "checkpoint", "event": "awaiting_human", "stage": "assets", "music_fallback_requires_approval": true}
+{"ts": "2026-08-13T22:09:11.240656+00:00", "tool": "video_compose", "event": "start", "output_path": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/ai-news-august-2026-master.mp4"}
+{"ts": "2026-08-13T22:09:12.033664+00:00", "tool": "video_compose", "event": "finish", "output_path": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/ai-news-august-2026-master.mp4", "success": false, "cost_usd": 0.0, "duration_s": 0.79}
+{"ts": "2026-08-13T22:10:00.583611+00:00", "tool": "video_compose", "event": "start", "output_path": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/ai-news-august-2026-master.mp4"}
+{"ts": "2026-08-13T22:15:50.292794+00:00", "tool": "video_compose", "event": "finish", "output_path": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/ai-news-august-2026-master.mp4", "success": true, "cost_usd": 0.0, "duration_s": 349.71}
+{"ts": "2026-08-13T22:19:36.120499+00:00", "tool": "export_bundle", "event": "start"}
+{"ts": "2026-08-13T22:19:36.205504+00:00", "tool": "export_bundle", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 0.08}
+{"ts": "2026-08-13T22:21:13.914272+00:00", "tool": "video_compose", "event": "start", "output_path": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/ai-news-august-2026-master.mp4"}
+{"ts": "2026-08-13T22:27:08.113336+00:00", "tool": "video_compose", "event": "finish", "output_path": "/home/user/OpenMontage/projects/ai-news-august-2026/renders/ai-news-august-2026-master.mp4", "success": false, "cost_usd": 0.0, "duration_s": 354.2}
+{"ts": "2026-08-13T22:29:37.397327+00:00", "tool": "export_bundle", "event": "start"}
+{"ts": "2026-08-13T22:29:37.587874+00:00", "tool": "export_bundle", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 0.19}
+{"ts": "2026-08-13T22:29:58.018667+00:00", "tool": "export_bundle", "event": "start"}
+{"ts": "2026-08-13T22:29:58.184128+00:00", "tool": "export_bundle", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 0.17}

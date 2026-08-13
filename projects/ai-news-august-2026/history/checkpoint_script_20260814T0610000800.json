@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "project_id": "ai-news-august-2026",
+  "pipeline_type": "animated-explainer",
+  "stage": "script",
+  "status": "completed",
+  "timestamp": "2026-08-14T06:10:00+08:00",
+  "style_playbook": "project-local editorial dark-tech atelier",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "script": "artifacts/script.json"
+  },
+  "review": {
+    "summary": "Script approved.",
+    "approval_verbatim": "Approved",
+    "batch_generation_allowed": false
+  },
+  "cost_snapshot": {
+    "total_spent_usd": 0,
+    "total_reserved_usd": 0,
+    "budget_remaining_usd": 2
+  },
+  "metadata": {
+    "reconstructed_after_ignored_state_loss": true
+  }
+}

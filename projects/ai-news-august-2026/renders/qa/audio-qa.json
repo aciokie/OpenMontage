@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "sample_rate_hz": 8000,
+  "channels_analyzed": 1,
+  "duration_seconds": 100.053,
+  "peak_dbfs": -4.023,
+  "rms_dbfs": -19.887,
+  "clipped_samples": 0,
+  "clipping_detected": false,
+  "narration_window_rms_dbfs": [
+    -19.56,
+    -19.52,
+    -20.65,
+    -19.5,
+    -18.62,
+    -18.56,
+    -20.08,
+    -20.76,
+    -18.97
+  ],
+  "narration_window_mean_rms_dbfs": -19.58,
+  "music_only_gap_rms_dbfs": [
+    -38.44,
+    -40.63,
+    -36.62,
+    -38.03,
+    -36.52,
+    -41.38,
+    -36.67,
+    -36.65
+  ],
+  "music_only_gap_mean_rms_dbfs": -38.12,
+  "narration_present": true,
+  "music_present_between_narration": true,
+  "unexpected_silence": false,
+  "silence_events_over_750ms_below_minus_50db": [],
+  "approved_preview_envelope_correlation": 0.77313,
+  "approved_preview_alignment_offset_seconds": 0.0,
+  "approved_preview_peak_dbfs": -4.326,
+  "approved_preview_rms_dbfs": -20.144,
+  "approved_preview_peak_delta_db": 0.303,
+  "approved_preview_rms_delta_db": 0.257,
+  "approved_mix_level_consistent": true,
+  "approved_mix_consistency_basis": "Peak and RMS differ by no more than 1 dB; final narration is ~20 dB above music-only gaps and has no clipping or unexpected silence.",
+  "governed_music_contract": {
+    "volume": 0.16,
+    "fade_in_seconds": 1.5,
+    "fade_out_seconds": 2.0,
+    "ducking_enabled": false
+  }
+}

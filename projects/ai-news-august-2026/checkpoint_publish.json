@@ -1,0 +1,276 @@
+{
+  "version": "1.0",
+  "project_id": "ai-news-august-2026",
+  "pipeline_type": "animated-explainer",
+  "stage": "publish",
+  "status": "awaiting_human",
+  "timestamp": "2026-08-13T22:30:23.756953+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "publish_log": {
+      "version": "1.0",
+      "entries": [
+        {
+          "platform": "youtube",
+          "status": "exported",
+          "export_path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports",
+          "timestamp": "2026-08-13T22:29:58.133677+00:00",
+          "metadata_used": {
+            "title": "AI News August 2026: Cheaper Models, Bigger Stakes",
+            "description": "AI is getting cheaper to use\u2014and more consequential to govern. This 100-second AI news briefing covers OpenAI\u2019s GPT-5.6 Sol and Luna access changes, Meta\u2019s Muse Glimmer laptop models and Muse Spark 1.2 open weights, NVIDIA and partners\u2019 non-binding plan intended to mobilize more than $500 billion for AI infrastructure, the EU AI Act\u2019s transparency requirements, and an autonomous-agent security incident in Australia.\n\nThe through-line: capability is moving outward to more people and devices, while capital, compliance, and security pressure concentrate around the systems behind it.\n\nSources checked August 14, 2026:\nOpenAI \u2014 https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/\nCNBC \u2014 https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html\nNVIDIA Newsroom \u2014 https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital\nEuropean Commission \u2014 https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714\nABC News Australia \u2014 https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986\n\nSubscribe or follow for concise, sourced AI news briefings.",
+            "hashtags": [
+              "#AINews",
+              "#ArtificialIntelligence",
+              "#OpenAI",
+              "#EUAIAct",
+              "#AIAgents"
+            ],
+            "chapters": [
+              {
+                "start_seconds": 0,
+                "title": "AI in two directions\u2014and OpenAI access"
+              },
+              {
+                "start_seconds": 23,
+                "title": "Meta moves AI local and open weight"
+              },
+              {
+                "start_seconds": 44,
+                "title": "Physical compute and the $500B-plus plan"
+              },
+              {
+                "start_seconds": 65,
+                "title": "EU AI Act transparency rules"
+              },
+              {
+                "start_seconds": 78,
+                "title": "Autonomous-agent security and bigger stakes"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "publish_metadata": {
+      "title": "AI News August 2026: Cheaper Models, Bigger Stakes",
+      "description": "AI is getting cheaper to use\u2014and more consequential to govern. This 100-second AI news briefing covers OpenAI\u2019s GPT-5.6 Sol and Luna access changes, Meta\u2019s Muse Glimmer laptop models and Muse Spark 1.2 open weights, NVIDIA and partners\u2019 non-binding plan intended to mobilize more than $500 billion for AI infrastructure, the EU AI Act\u2019s transparency requirements, and an autonomous-agent security incident in Australia.\n\nThe through-line: capability is moving outward to more people and devices, while capital, compliance, and security pressure concentrate around the systems behind it.\n\nSources checked August 14, 2026:\nOpenAI \u2014 https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/\nCNBC \u2014 https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html\nNVIDIA Newsroom \u2014 https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital\nEuropean Commission \u2014 https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714\nABC News Australia \u2014 https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986\n\nSubscribe or follow for concise, sourced AI news briefings.",
+      "tags": [
+        "AI news",
+        "AI news August 2026",
+        "OpenAI GPT-5.6",
+        "ChatGPT Luna",
+        "Meta Muse Glimmer",
+        "open-weight AI",
+        "AI infrastructure",
+        "EU AI Act",
+        "autonomous AI agents",
+        "artificial intelligence"
+      ],
+      "hashtags": [
+        "#AINews",
+        "#ArtificialIntelligence",
+        "#OpenAI",
+        "#EUAIAct",
+        "#AIAgents"
+      ],
+      "chapters": [
+        {
+          "start_seconds": 0,
+          "title": "AI in two directions\u2014and OpenAI access"
+        },
+        {
+          "start_seconds": 23,
+          "title": "Meta moves AI local and open weight"
+        },
+        {
+          "start_seconds": 44,
+          "title": "Physical compute and the $500B-plus plan"
+        },
+        {
+          "start_seconds": 65,
+          "title": "EU AI Act transparency rules"
+        },
+        {
+          "start_seconds": 78,
+          "title": "Autonomous-agent security and bigger stakes"
+        }
+      ],
+      "thumbnail_concept": {
+        "concept": "A high-contrast editorial split: a slim laptop and branching coral signal lines on the left suggest cheaper local AI; a monumental data-center corridor with a rising capital arc on the right suggests concentrated stakes. A thin vertical lime rule divides the halves.",
+        "text_overlay": "CHEAPER AI. BIGGER STAKES.",
+        "style_notes": "Use the approved dark-ink editorial atelier: near-black #071015 field, coral #FF6B57 and lime #C9F66B accents, bold uppercase condensed headline, generous negative space, no synthetic faces, and readable contrast at mobile size.",
+        "stock_direction": "Use the already approved laptop and server-room stock-photo treatments from the video; preserve their source attribution in project records.",
+        "aspect_ratio": "16:9"
+      },
+      "platform": "youtube"
+    },
+    "export_package_qa": {
+      "version": "1.0",
+      "status": "pass",
+      "export_path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports",
+      "files": [
+        {
+          "path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports/video/output.mp4",
+          "relative_path": "video/output.mp4",
+          "exists": true,
+          "size_bytes": 47709521,
+          "sha256": "c5559316b32b175f0f1834c4f34edccd423f523c274c1eec084dceb019b7f1f4"
+        },
+        {
+          "path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports/video/subtitles.srt",
+          "relative_path": "video/subtitles.srt",
+          "exists": true,
+          "size_bytes": 2770,
+          "sha256": "88803cb9b1a4e66e8d1551ab5e09756af1295c9fe2b1fd3bc785407180b44930"
+        },
+        {
+          "path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports/metadata/metadata.json",
+          "relative_path": "metadata/metadata.json",
+          "exists": true,
+          "size_bytes": 2286,
+          "sha256": "eb236b705884956cc02edcef60f65370a47ca76fd33a08ac2d16b04ea858d67b"
+        },
+        {
+          "path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports/metadata/description.txt",
+          "relative_path": "metadata/description.txt",
+          "exists": true,
+          "size_bytes": 1525,
+          "sha256": "ec5e9d05788aabbcb3ec78347925be49a5c64eceedb884c93ea808694c82c7e2"
+        },
+        {
+          "path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports/metadata/tags.txt",
+          "relative_path": "metadata/tags.txt",
+          "exists": true,
+          "size_bytes": 162,
+          "sha256": "915c7186fc4305c7770a612659ef2a41d89a617ac4fda70fd884e6a84c1b5c38"
+        },
+        {
+          "path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports/metadata/chapters.txt",
+          "relative_path": "metadata/chapters.txt",
+          "exists": true,
+          "size_bytes": 226,
+          "sha256": "f359488605ab2373a755db1227c260c0e7063f46148e5b7c006e9f2895248b0e"
+        },
+        {
+          "path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports/thumbnails/concept.json",
+          "relative_path": "thumbnails/concept.json",
+          "exists": true,
+          "size_bytes": 773,
+          "sha256": "87e12cd03fff16a83e69445640d95f51c95a91f1b93132bfbcaeedb2fbde1c7e"
+        }
+      ],
+      "required_file_count": 7,
+      "all_required_files_present_and_nonempty": true,
+      "video_byte_identical_to_approved_master": true,
+      "video_sha256": "c5559316b32b175f0f1834c4f34edccd423f523c274c1eec084dceb019b7f1f4",
+      "subtitles_byte_identical_to_validated_srt": true,
+      "metadata_json_parseable": true,
+      "thumbnail_concept_json_parseable": true,
+      "seo": {
+        "title_characters": 50,
+        "title_within_60_characters": true,
+        "primary_keyword_in_title": true,
+        "description_has_source_links": true,
+        "description_has_call_to_action": true,
+        "tag_count": 10,
+        "hashtag_count": 5
+      },
+      "chapters": {
+        "count": 5,
+        "starts_at_zero": true,
+        "monotonic": true,
+        "durations_seconds": [
+          23,
+          21,
+          21,
+          13,
+          22
+        ],
+        "all_at_least_10_seconds": true,
+        "all_within_video": true
+      },
+      "thumbnail": {
+        "concept_present": true,
+        "text_overlay": "CHEAPER AI. BIGGER STAKES.",
+        "overlay_word_count": 4,
+        "approved_style_referenced": true,
+        "stock_direction_present": true
+      },
+      "publish_log_schema_valid": true,
+      "network_upload_performed": false,
+      "provider_spend_usd": 0
+    },
+    "publish_review": {
+      "version": "1.0",
+      "stage": "publish",
+      "round": 1,
+      "findings": [],
+      "metadata": {
+        "status": "pass",
+        "critical_findings": 0,
+        "unresolved_findings": 0,
+        "seo_quality_score": 5,
+        "description_completeness_score": 5,
+        "thumbnail_concept_score": 4,
+        "export_package_score": 5,
+        "platform_fit_score": 5,
+        "title_characters": 50,
+        "source_links": 5,
+        "chapters": 5,
+        "minimum_chapter_duration_seconds": 13,
+        "tags": 10,
+        "hashtags": 5,
+        "required_export_files": 7,
+        "video_matches_approved_master": true,
+        "subtitles_included": true,
+        "thumbnail_concept_included": true,
+        "network_upload_performed": false,
+        "recommended_action": "await_human_publish_approval"
+      }
+    }
+  },
+  "review": {
+    "version": "1.0",
+    "stage": "publish",
+    "round": 1,
+    "findings": [],
+    "metadata": {
+      "status": "pass",
+      "critical_findings": 0,
+      "unresolved_findings": 0,
+      "seo_quality_score": 5,
+      "description_completeness_score": 5,
+      "thumbnail_concept_score": 4,
+      "export_package_score": 5,
+      "platform_fit_score": 5,
+      "title_characters": 50,
+      "source_links": 5,
+      "chapters": 5,
+      "minimum_chapter_duration_seconds": 13,
+      "tags": 10,
+      "hashtags": 5,
+      "required_export_files": 7,
+      "video_matches_approved_master": true,
+      "subtitles_included": true,
+      "thumbnail_concept_included": true,
+      "network_upload_performed": false,
+      "recommended_action": "await_human_publish_approval"
+    }
+  },
+  "cost_snapshot": {
+    "total_spent_usd": 0,
+    "total_reserved_usd": 0,
+    "budget_remaining_usd": 2
+  },
+  "metadata": {
+    "gate": "human",
+    "gate_prompt": "Approve the final export package and local publish log?",
+    "export_path": "/home/user/OpenMontage/projects/ai-news-august-2026/exports",
+    "downloadable_video": "/home/user/OpenMontage/projects/ai-news-august-2026/exports/video/output.mp4",
+    "video_sha256": "c5559316b32b175f0f1834c4f34edccd423f523c274c1eec084dceb019b7f1f4",
+    "network_upload_performed": false,
+    "provider_spend_usd": 0
+  }
+}

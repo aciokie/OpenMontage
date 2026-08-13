@@ -142,6 +142,14 @@ class VideoCompose(BaseTool):
                     "transcript_comparison when a file path is unavailable."
                 ),
             },
+            "browser_executable": {
+                "type": "string",
+                "description": (
+                    "Optional path to a preflight-approved Chromium/Chrome executable. "
+                    "Passed to Remotion as `--browser-executable`; no browser or "
+                    "render-runtime substitution is attempted when it is omitted."
+                ),
+            },
             "subtitle_path": {"type": "string"},
             "subtitle_style": {
                 "type": "object",
@@ -983,6 +991,16 @@ class VideoCompose(BaseTool):
             pd = Path(public_dir).resolve()
             if pd.exists():
                 cmd.append(f"--public-dir={pd}")
+
+        browser_executable = inputs.get("browser_executable")
+        if browser_executable:
+            browser_path = Path(browser_executable).expanduser().resolve()
+            if not browser_path.is_file():
+                return ToolResult(
+                    success=False,
+                    error=f"Approved browser executable not found: {browser_path}",
+                )
+            cmd.append(f"--browser-executable={browser_path}")
 
         if bespoke.get("scale"):
             cmd.append(f"--scale={bespoke['scale']}")
@@ -1956,6 +1974,16 @@ class VideoCompose(BaseTool):
         ]
         if public_dir is not None:
             cmd.append(f"--public-dir={public_dir}")
+
+        browser_executable = inputs.get("browser_executable")
+        if browser_executable:
+            browser_path = Path(browser_executable).expanduser().resolve()
+            if not browser_path.is_file():
+                return ToolResult(
+                    success=False,
+                    error=f"Approved browser executable not found: {browser_path}",
+                )
+            cmd.append(f"--browser-executable={browser_path}")
 
         # Apply media profile dimensions
         profile_name = inputs.get("profile")

@@ -1,6 +1,169 @@
 {
   "version": "1.0",
-  "cuts": [],
+  "cuts": [
+    {
+      "id": "cut-s1",
+      "source": "atelier-composition",
+      "in_seconds": 0.0,
+      "out_seconds": 9.0,
+      "speed": 1.0,
+      "layer": "primary",
+      "transform": {
+        "scale": 1.0,
+        "position": "center",
+        "animation": "bespoke-remotion-scene-motion"
+      },
+      "transition_in": "fade",
+      "transition_out": "cut",
+      "transition_duration": 0.35,
+      "backgroundColor": "#071015",
+      "reason": "Cold-open city field, contradiction typography, and animated signal trace."
+    },
+    {
+      "id": "cut-s2",
+      "source": "atelier-composition",
+      "in_seconds": 9.0,
+      "out_seconds": 23.0,
+      "speed": 1.0,
+      "layer": "primary",
+      "transform": {
+        "scale": 1.0,
+        "position": "center",
+        "animation": "bespoke-remotion-scene-motion"
+      },
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "backgroundColor": "#071015",
+      "reason": "OpenAI access update with device stock, usage ticker, and error-rate comparison."
+    },
+    {
+      "id": "cut-s3",
+      "source": "atelier-composition",
+      "in_seconds": 23.0,
+      "out_seconds": 35.0,
+      "speed": 1.0,
+      "layer": "primary",
+      "transform": {
+        "scale": 1.0,
+        "position": "center",
+        "animation": "bespoke-remotion-scene-motion"
+      },
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "backgroundColor": "#071015",
+      "reason": "Edge-computing story with a distinct laptop-focused crop and local-processing diagram."
+    },
+    {
+      "id": "cut-s4",
+      "source": "atelier-composition",
+      "in_seconds": 35.0,
+      "out_seconds": 44.0,
+      "speed": 1.0,
+      "layer": "primary",
+      "transform": {
+        "scale": 1.0,
+        "position": "center",
+        "animation": "bespoke-remotion-scene-motion"
+      },
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "backgroundColor": "#071015",
+      "reason": "Open-weights explanation over code stock with an animated parameter panel."
+    },
+    {
+      "id": "cut-s5",
+      "source": "atelier-composition",
+      "in_seconds": 44.0,
+      "out_seconds": 49.0,
+      "speed": 1.0,
+      "layer": "primary",
+      "transform": {
+        "scale": 1.0,
+        "position": "center",
+        "animation": "bespoke-remotion-scene-motion"
+      },
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "backgroundColor": "#071015",
+      "reason": "Short physical-compute bridge using technician/server stock and dimensional type."
+    },
+    {
+      "id": "cut-s6",
+      "source": "atelier-composition",
+      "in_seconds": 49.0,
+      "out_seconds": 65.0,
+      "speed": 1.0,
+      "layer": "primary",
+      "transform": {
+        "scale": 1.0,
+        "position": "center",
+        "animation": "bespoke-remotion-scene-motion"
+      },
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "backgroundColor": "#071015",
+      "reason": "Infrastructure-capital story with city stock, financing nodes, and a qualified $500B figure."
+    },
+    {
+      "id": "cut-s7",
+      "source": "atelier-composition",
+      "in_seconds": 65.0,
+      "out_seconds": 78.0,
+      "speed": 1.0,
+      "layer": "primary",
+      "transform": {
+        "scale": 1.0,
+        "position": "center",
+        "animation": "bespoke-remotion-scene-motion"
+      },
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "backgroundColor": "#071015",
+      "reason": "EU transparency requirements using flag stock and three sequential compliance cards."
+    },
+    {
+      "id": "cut-s8",
+      "source": "atelier-composition",
+      "in_seconds": 78.0,
+      "out_seconds": 93.0,
+      "speed": 1.0,
+      "layer": "primary",
+      "transform": {
+        "scale": 1.0,
+        "position": "center",
+        "animation": "bespoke-remotion-scene-motion"
+      },
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "backgroundColor": "#071015",
+      "reason": "Agent-risk incident using fitness-app stock, an animated booking flow, and a red override state."
+    },
+    {
+      "id": "cut-s9",
+      "source": "atelier-composition",
+      "in_seconds": 93.0,
+      "out_seconds": 100.0,
+      "speed": 1.0,
+      "layer": "primary",
+      "transform": {
+        "scale": 1.0,
+        "position": "center",
+        "animation": "bespoke-remotion-scene-motion"
+      },
+      "transition_in": "cut",
+      "transition_out": "fade",
+      "transition_duration": 0.35,
+      "backgroundColor": "#071015",
+      "reason": "Typographic synthesis resolving edge access, infrastructure scale, and accountability."
+    }
+  ],
   "overlays": [],
   "audio": {
     "narration": {
@@ -52,12 +215,25 @@
         }
       ]
     },
-    "sfx": []
+    "sfx": [],
+    "music": {
+      "asset_id": "music-procedural-candidate",
+      "volume": 0.16,
+      "fade_in_seconds": 1.5,
+      "fade_out_seconds": 2.0,
+      "ducking": {
+        "enabled": false,
+        "threshold_db": -18.0,
+        "reduction_db": -3.0,
+        "attack_ms": 120.0,
+        "release_ms": 420.0
+      }
+    }
   },
   "subtitles": {
     "enabled": true,
     "style": "sentence",
-    "source": "subtitle-pages",
+    "source": "/home/user/OpenMontage/projects/ai-news-august-2026/assets/subtitles/caption-pages.json",
     "font": "Arial",
     "font_size": 31,
     "color": "#E8F2EE",
@@ -77,7 +253,7 @@
     "public_dir": "/home/user/OpenMontage/projects/ai-news-august-2026/public",
     "scale": 1.0,
     "crf": 18,
-    "concurrency": 4
+    "concurrency": 2
   },
   "slideshow_risk_score": {
     "average": 0.58,
@@ -87,8 +263,69 @@
     "runtime_locked_at_proposal": true,
     "composition_mode_locked_at_proposal": true,
     "music_candidate_asset_id": "music-procedural-candidate",
-    "music_enabled": false,
-    "music_pending_assets_gate_approval": true,
-    "narration_schedule_uses_actual_normalized_durations": true
-  }
+    "music_enabled": true,
+    "music_pending_assets_gate_approval": false,
+    "narration_schedule_uses_actual_normalized_durations": true,
+    "target_duration_seconds": 100.0,
+    "proposal_render_runtime": "remotion",
+    "music_approval_verbatim": "Approve both",
+    "music_review_mix_level": 0.16,
+    "music_ducking_policy": "Explicitly disabled: the exact approved review mix uses a pre-balanced 16% bed; threshold, reduction, attack, and release parameters remain recorded for audit.",
+    "subtitle_asset_id": "subtitle-pages",
+    "asset_manifest_ref": "/home/user/OpenMontage/projects/ai-news-august-2026/artifacts/asset-manifest.json",
+    "browser_executable": "/tmp/chromium",
+    "browser_library_path": "/tmp/al2023/lib",
+    "delivery_promise": {
+      "promise_type": "data_explainer",
+      "motion_required": true,
+      "source_required": false,
+      "tone_mode": "cinematic editorial",
+      "quality_floor": "presentable",
+      "approved_fallback": null
+    },
+    "render_concurrency": 2,
+    "render_concurrency_revision_reason": "Remotion detected 2 available CPU cores; reduced from 4 to 2 before any frame was rendered."
+  },
+  "transitions": [
+    {
+      "type": "editorial-cut",
+      "at_seconds": 9.0,
+      "duration_seconds": 0.0
+    },
+    {
+      "type": "editorial-cut",
+      "at_seconds": 23.0,
+      "duration_seconds": 0.0
+    },
+    {
+      "type": "editorial-cut",
+      "at_seconds": 35.0,
+      "duration_seconds": 0.0
+    },
+    {
+      "type": "editorial-cut",
+      "at_seconds": 44.0,
+      "duration_seconds": 0.0
+    },
+    {
+      "type": "editorial-cut",
+      "at_seconds": 49.0,
+      "duration_seconds": 0.0
+    },
+    {
+      "type": "editorial-cut",
+      "at_seconds": 65.0,
+      "duration_seconds": 0.0
+    },
+    {
+      "type": "editorial-cut",
+      "at_seconds": 78.0,
+      "duration_seconds": 0.0
+    },
+    {
+      "type": "editorial-cut",
+      "at_seconds": 93.0,
+      "duration_seconds": 0.0
+    }
+  ]
 }
