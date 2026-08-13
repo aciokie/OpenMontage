@@ -315,6 +315,32 @@
       "user_visible": true,
       "user_approved": true,
       "confidence": 1.0
+    },
+    {
+      "decision_id": "d-012",
+      "stage": "publish",
+      "category": "visual_accuracy_check",
+      "subject": "Approval of the final export package and local publish log",
+      "options_considered": [
+        {
+          "option_id": "approve-final-export",
+          "label": "Approve final export package",
+          "score": 1.0,
+          "reason": "The reviewed master and seven-file export bundle passed compose, subtitle, audio, transition, and package QA."
+        },
+        {
+          "option_id": "request-changes",
+          "label": "Request changes before completion",
+          "score": 0.1,
+          "reason": "Available if the reviewed master or package required revision.",
+          "rejected_because": "The user approved at the mandatory publish gate."
+        }
+      ],
+      "selected": "approve-final-export",
+      "reason": "At the mandatory publish gate, the user replied \u201caoorove\u201d, interpreted as an obvious typographical approval of the presented final export package.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
     }
   ]
 }

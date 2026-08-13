@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "stage": "publish",
-  "round": 1,
+  "round": 2,
   "findings": [],
   "metadata": {
     "status": "pass",
@@ -23,6 +23,10 @@
     "subtitles_included": true,
     "thumbnail_concept_included": true,
     "network_upload_performed": false,
-    "recommended_action": "await_human_publish_approval"
+    "recommended_action": "complete_pipeline",
+    "human_gate_result": "approved",
+    "approval_verbatim": "aoorove",
+    "approval_interpretation": "approve",
+    "approved_video_sha256": "c5559316b32b175f0f1834c4f34edccd423f523c274c1eec084dceb019b7f1f4"
   }
 }

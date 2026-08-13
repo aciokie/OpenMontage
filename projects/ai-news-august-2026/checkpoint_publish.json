@@ -3,11 +3,11 @@
   "project_id": "ai-news-august-2026",
   "pipeline_type": "animated-explainer",
   "stage": "publish",
-  "status": "awaiting_human",
-  "timestamp": "2026-08-13T22:30:23.756953+00:00",
+  "status": "completed",
+  "timestamp": "2026-08-13T22:32:53.066086+00:00",
   "checkpoint_policy": "guided",
   "human_approval_required": true,
-  "human_approved": false,
+  "human_approved": true,
   "artifacts": {
     "publish_log": {
       "version": "1.0",
@@ -205,7 +205,7 @@
     "publish_review": {
       "version": "1.0",
       "stage": "publish",
-      "round": 1,
+      "round": 2,
       "findings": [],
       "metadata": {
         "status": "pass",
@@ -227,14 +227,364 @@
         "subtitles_included": true,
         "thumbnail_concept_included": true,
         "network_upload_performed": false,
-        "recommended_action": "await_human_publish_approval"
+        "recommended_action": "complete_pipeline",
+        "human_gate_result": "approved",
+        "approval_verbatim": "aoorove",
+        "approval_interpretation": "approve",
+        "approved_video_sha256": "c5559316b32b175f0f1834c4f34edccd423f523c274c1eec084dceb019b7f1f4"
       }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "ai-news-august-2026",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "proposal",
+          "category": "pipeline_selection",
+          "subject": "Production pipeline",
+          "options_considered": [
+            {
+              "option_id": "animated",
+              "label": "animated-explainer",
+              "score": 0.96,
+              "reason": "Required staged explainer workflow."
+            },
+            {
+              "option_id": "cinematic",
+              "label": "cinematic-narrative",
+              "score": 0.55,
+              "reason": "Less suited to a source-dense current-news explainer.",
+              "rejected_because": "Narrative grammar does not fit five sourced updates."
+            }
+          ],
+          "selected": "animated",
+          "reason": "The animated-explainer manifest provides the required research, asset, review, and render gates.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "proposal",
+          "category": "concept_selection",
+          "subject": "Editorial concept",
+          "options_considered": [
+            {
+              "option_id": "c1",
+              "label": "AI Gets Cheaper, Stakes Get Bigger",
+              "score": 0.96,
+              "reason": "Memorable contradiction connecting all five items."
+            },
+            {
+              "option_id": "c2",
+              "label": "Five Signals From AI Week",
+              "score": 0.75,
+              "reason": "Clear but generic.",
+              "rejected_because": "Less cohesive."
+            },
+            {
+              "option_id": "c3",
+              "label": "From Laptop to Law",
+              "score": 0.78,
+              "reason": "Strong journey but underweights OpenAI access.",
+              "rejected_because": "Narrower thesis."
+            }
+          ],
+          "selected": "c1",
+          "reason": "User approved the contradiction-led concept.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "proposal",
+          "category": "renderer_family_selection",
+          "subject": "Creative renderer grammar",
+          "options_considered": [
+            {
+              "option_id": "documentary",
+              "label": "documentary-montage",
+              "score": 0.93,
+              "reason": "Best for sourced stock and factual overlays."
+            },
+            {
+              "option_id": "data",
+              "label": "explainer-data",
+              "score": 0.86,
+              "reason": "Strong cards but underuses photography.",
+              "rejected_because": "Stock photos are an explicit requirement."
+            }
+          ],
+          "selected": "documentary",
+          "reason": "Documentary montage supports visual metaphor while native graphics carry precise facts.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Technical render runtime",
+          "options_considered": [
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.95,
+              "reason": "Deterministic frame-based motion and audio."
+            },
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.42,
+              "reason": "Published CLI unavailable in environment.",
+              "rejected_because": "Unavailable."
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg",
+              "score": 0.61,
+              "reason": "Suitable only as a simple fallback.",
+              "rejected_because": "Cannot realize the approved bespoke motion grammar alone."
+            }
+          ],
+          "selected": "remotion",
+          "reason": "Remotion was approved; FFmpeg remains finishing/validation only.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "proposal",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "atelier",
+              "label": "atelier",
+              "score": 0.97,
+              "reason": "Fresh project-local composition and signature signal-line device."
+            },
+            {
+              "option_id": "templated",
+              "label": "templated",
+              "score": 0.52,
+              "reason": "Faster but repeats stock components.",
+              "rejected_because": "Hero explainer requires bespoke composition."
+            }
+          ],
+          "selected": "atelier",
+          "reason": "Atelier mode preserves the approved art direction and quality floor.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-006",
+          "stage": "proposal",
+          "category": "voice_selection",
+          "subject": "Narration voice",
+          "options_considered": [
+            {
+              "option_id": "piper",
+              "label": "Piper en_US-lessac-medium",
+              "score": 0.9,
+              "reason": "Approved sample, intelligible, local, zero spend."
+            },
+            {
+              "option_id": "cloud",
+              "label": "Cloud TTS",
+              "score": 0.75,
+              "reason": "More direction control but unnecessary provider spend.",
+              "rejected_because": "Approved local sample already meets the gate."
+            }
+          ],
+          "selected": "piper",
+          "reason": "The user explicitly approved the Lessac representative sample.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-007",
+          "stage": "proposal",
+          "category": "music_source",
+          "subject": "Background music source",
+          "options_considered": [
+            {
+              "option_id": "pixabay",
+              "label": "Pixabay free instrumental",
+              "score": 0.88,
+              "reason": "No-key licensed technology tracks."
+            },
+            {
+              "option_id": "none",
+              "label": "No music",
+              "score": 0.4,
+              "reason": "Avoids acquisition but weakens pacing.",
+              "rejected_because": "Approved plan includes restrained music."
+            }
+          ],
+          "selected": "pixabay",
+          "reason": "Pixabay is the approved no-key licensed source.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-008",
+          "stage": "assets",
+          "category": "provider_selection",
+          "subject": "Stock photography",
+          "options_considered": [
+            {
+              "option_id": "stock",
+              "label": "Verified Unsplash and Pexels free stock",
+              "score": 0.96,
+              "reason": "Matches explicit user request and permits editing."
+            },
+            {
+              "option_id": "generated",
+              "label": "AI-generated visuals",
+              "score": 0.2,
+              "reason": "Not requested.",
+              "rejected_because": "User explicitly required stock photos."
+            }
+          ],
+          "selected": "stock",
+          "reason": "Use only verified free/non-premium images with canonical source and license records.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-009",
+          "stage": "assets",
+          "category": "budget_tradeoff",
+          "subject": "Provider-spend plan",
+          "options_considered": [
+            {
+              "option_id": "free",
+              "label": "Local/free providers: $0",
+              "score": 0.99,
+              "reason": "Within cap and approved."
+            },
+            {
+              "option_id": "premium",
+              "label": "Premium providers up to $2",
+              "score": 0.58,
+              "reason": "Could increase voice expressiveness but not needed.",
+              "rejected_because": "Approved samples support the free path."
+            }
+          ],
+          "selected": "free",
+          "reason": "$0 actual/estimated provider spend is within the approved $2 cap.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-010",
+          "stage": "assets",
+          "category": "fallback_decision",
+          "subject": "Background music acquisition fallback",
+          "options_considered": [
+            {
+              "option_id": "pixabay-514734",
+              "label": "AudioDollar Technology Background Technology (Pixabay 514734)",
+              "score": 0.88,
+              "reason": "Approved source family and preferred editorial fit.",
+              "rejected_because": "First-party media acquisition remained blocked after browser, shell, and CDN attempts."
+            },
+            {
+              "option_id": "procedural-original",
+              "label": "Original procedural editorial bed",
+              "score": 0.86,
+              "reason": "Local, deterministic, instrumental, zero cost, and avoids Content ID uncertainty."
+            },
+            {
+              "option_id": "none",
+              "label": "No music",
+              "score": 0.4,
+              "reason": "Avoids substitution.",
+              "rejected_because": "Weakens the approved restrained-music pacing plan."
+            }
+          ],
+          "selected": "procedural-original",
+          "reason": "A project-original 114.8 BPM candidate was produced as the transparent fallback; selection remains provisional until the assets review.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-011",
+          "stage": "assets",
+          "category": "music_source",
+          "subject": "Approval of project-original procedural background music fallback",
+          "options_considered": [
+            {
+              "option_id": "procedural-original-approved",
+              "label": "Approve original procedural editorial bed",
+              "score": 1.0,
+              "reason": "The reviewed 100.032-second mix demonstrates the local 114.8 BPM instrumental at the intended 16% level."
+            },
+            {
+              "option_id": "hold-for-pixabay",
+              "label": "Hold production for first-party Pixabay acquisition",
+              "score": 0.35,
+              "reason": "Would preserve the initial sourcing preference but block the production after repeated acquisition failures.",
+              "rejected_because": "The user explicitly approved the reviewed procedural fallback."
+            },
+            {
+              "option_id": "no-music",
+              "label": "Proceed without music",
+              "score": 0.3,
+              "reason": "Avoids substitution but weakens the approved pacing and reviewed mix.",
+              "rejected_because": "The user explicitly approved the reviewed procedural fallback."
+            }
+          ],
+          "selected": "procedural-original-approved",
+          "reason": "The user approved both the complete visual/narration batch and the procedural fallback by replying \u201cApprove both\u201d.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-012",
+          "stage": "publish",
+          "category": "visual_accuracy_check",
+          "subject": "Approval of the final export package and local publish log",
+          "options_considered": [
+            {
+              "option_id": "approve-final-export",
+              "label": "Approve final export package",
+              "score": 1.0,
+              "reason": "The reviewed master and seven-file export bundle passed compose, subtitle, audio, transition, and package QA."
+            },
+            {
+              "option_id": "request-changes",
+              "label": "Request changes before completion",
+              "score": 0.1,
+              "reason": "Available if the reviewed master or package required revision.",
+              "rejected_because": "The user approved at the mandatory publish gate."
+            }
+          ],
+          "selected": "approve-final-export",
+          "reason": "At the mandatory publish gate, the user replied \u201caoorove\u201d, interpreted as an obvious typographical approval of the presented final export package.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.99
+        }
+      ]
     }
   },
   "review": {
     "version": "1.0",
     "stage": "publish",
-    "round": 1,
+    "round": 2,
     "findings": [],
     "metadata": {
       "status": "pass",
@@ -256,7 +606,11 @@
       "subtitles_included": true,
       "thumbnail_concept_included": true,
       "network_upload_performed": false,
-      "recommended_action": "await_human_publish_approval"
+      "recommended_action": "complete_pipeline",
+      "human_gate_result": "approved",
+      "approval_verbatim": "aoorove",
+      "approval_interpretation": "approve",
+      "approved_video_sha256": "c5559316b32b175f0f1834c4f34edccd423f523c274c1eec084dceb019b7f1f4"
     }
   },
   "cost_snapshot": {
@@ -271,6 +625,11 @@
     "downloadable_video": "/home/user/OpenMontage/projects/ai-news-august-2026/exports/video/output.mp4",
     "video_sha256": "c5559316b32b175f0f1834c4f34edccd423f523c274c1eec084dceb019b7f1f4",
     "network_upload_performed": false,
-    "provider_spend_usd": 0
+    "provider_spend_usd": 0,
+    "gate_result": "approved",
+    "approval_verbatim": "aoorove",
+    "approval_interpretation": "approve",
+    "approval_decision_id": "d-012",
+    "completed_pipeline": true
   }
 }
