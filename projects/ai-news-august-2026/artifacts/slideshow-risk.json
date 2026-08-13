@@ -1,0 +1,31 @@
+{
+  "average": 0.58,
+  "verdict": "strong",
+  "dimensions": {
+    "repetition": {
+      "score": 3.5,
+      "reason": "Scene type 'animation' dominates at 100%; Same shot size in 100% of scenes"
+    },
+    "decorative_visuals": {
+      "score": 0.0,
+      "reason": "Most scenes have clear communicative purpose"
+    },
+    "weak_motion": {
+      "score": 0.0,
+      "reason": "Camera movement appears purposeful"
+    },
+    "weak_shot_intent": {
+      "score": 0.0,
+      "reason": "Strong shot intent coverage"
+    },
+    "typography_overreliance": {
+      "score": 0.0,
+      "reason": "Visual-first approach"
+    },
+    "unsupported_cinematic_claims": {
+      "score": 0.0,
+      "reason": "Not claiming cinematic treatment"
+    }
+  },
+  "render_runtime": "remotion"
+}

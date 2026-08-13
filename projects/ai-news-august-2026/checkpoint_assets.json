@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "project_id": "ai-news-august-2026",
+  "pipeline_type": "animated-explainer",
+  "stage": "assets",
+  "status": "awaiting_human",
+  "timestamp": "2026-08-14T16:20:00+08:00",
+  "style_playbook": "project-local editorial dark-tech atelier",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "asset_manifest": "artifacts/asset-manifest.json",
+    "assets_review": "artifacts/assets-review.json",
+    "contact_sheet": "snapshots/assets-review-contact-sheet.jpg",
+    "audio_preview": "assets/review/assets-review-audio-preview.mp3",
+    "edit_decisions": "artifacts/edit_decisions.json",
+    "decision_log": "artifacts/decision-log.json",
+    "art_direction": "art-direction.md",
+    "props": "artifacts/props.json"
+  },
+  "review": {
+    "summary": "Batch assets complete: six verified stock photos, nine normalized Lessac narration sections, clause-aware captions, an original procedural music fallback candidate, and nine compiled representative atelier stills. Awaiting explicit approval before any video draft render.",
+    "previous_sample_approval_verbatim": "approve- **Approve both**",
+    "batch_generation_complete": true,
+    "music_fallback_requires_approval": true,
+    "full_video_render_started": false
+  },
+  "cost_snapshot": {
+    "total_spent_usd": 0,
+    "total_reserved_usd": 0,
+    "budget_remaining_usd": 2
+  },
+  "metadata": {
+    "reconstructed_after_ignored_state_loss": true,
+    "browser_executable": "/tmp/chromium",
+    "browser_library_path": "/tmp/al2023/lib",
+    "slideshow_risk_verdict": "strong"
+  }
+}

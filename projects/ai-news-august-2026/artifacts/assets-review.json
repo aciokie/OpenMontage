@@ -1,0 +1,45 @@
+{
+  "version": "1.0",
+  "stage": "assets",
+  "round": 1,
+  "findings": [
+    {
+      "id": "assets-001",
+      "severity": "suggestion",
+      "category": "music_source",
+      "description": "The approved Pixabay source family could not be acquired. A project-original procedural instrumental is supplied as a transparent fallback candidate.",
+      "disposition": "pending",
+      "agent_response": "Recorded as decision d-010, kept disabled in props/edit decisions, and surfaced for explicit approval at this gate."
+    },
+    {
+      "id": "assets-002",
+      "severity": "nitpick",
+      "category": "voice_recovery",
+      "description": "The historical approved representative WAV was lost during the ignored-state regression.",
+      "disposition": "accepted",
+      "agent_response": "The approved Piper Lessac model identity and approval record were preserved; all sections use that model and provider_text, with actual durations within \u00b115% of planned slots."
+    },
+    {
+      "id": "assets-003",
+      "severity": "nitpick",
+      "category": "scene_distinctness",
+      "description": "No two scenes share the same primary visual subject; repeated photos change semantic role and composition.",
+      "disposition": "accepted",
+      "agent_response": "Nine representative mid-scene stills confirm the scene inventory in art-direction.md and match the approved script/scene order."
+    }
+  ],
+  "metadata": {
+    "critical_findings": 0,
+    "verified_stock_assets": 6,
+    "narration_sections": 9,
+    "review_stills": 9,
+    "contact_sheet": "snapshots/assets-review-contact-sheet.jpg",
+    "audio_preview": "assets/review/assets-review-audio-preview.mp3",
+    "slideshow_risk": {
+      "average": 0.58,
+      "verdict": "strong"
+    },
+    "provider_spend_usd": 0,
+    "music_approval_required": true
+  }
+}

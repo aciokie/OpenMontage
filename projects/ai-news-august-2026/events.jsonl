@@ -1,0 +1,13 @@
+{"ts": "2026-08-13T21:28:11.182360+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/ai-news-august-2026/assets/narration/raw/s6-test.wav"}
+{"ts": "2026-08-13T21:28:13.936623+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/ai-news-august-2026/assets/narration/raw/s6-test.wav", "success": true, "cost_usd": 0.0, "duration_s": 2.75}
+{"ts": "2026-08-13T21:28:19.484058+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/ai-news-august-2026/assets/narration/raw/s6-test-dollar.wav"}
+{"ts": "2026-08-13T21:28:22.200682+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/ai-news-august-2026/assets/narration/raw/s6-test-dollar.wav", "success": true, "cost_usd": 0.0, "duration_s": 2.72}
+{"ts": "2026-08-13T21:28:30.274821+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/ai-news-august-2026/assets/narration/raw/s6-test-1.04.wav"}
+{"ts": "2026-08-13T21:28:33.103300+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/ai-news-august-2026/assets/narration/raw/s6-test-1.04.wav", "success": true, "cost_usd": 0.0, "duration_s": 2.83}
+{"ts": "2026-08-13T21:28:33.103693+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/ai-news-august-2026/assets/narration/raw/s6-test-1.045.wav"}
+{"ts": "2026-08-13T21:28:35.780011+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/ai-news-august-2026/assets/narration/raw/s6-test-1.045.wav", "success": true, "cost_usd": 0.0, "duration_s": 2.68}
+{"ts": "2026-08-13T21:28:35.780308+00:00", "tool": "piper_tts", "event": "start", "output_path": "projects/ai-news-august-2026/assets/narration/raw/s6-test-1.05.wav"}
+{"ts": "2026-08-13T21:28:38.504288+00:00", "tool": "piper_tts", "event": "finish", "output_path": "projects/ai-news-august-2026/assets/narration/raw/s6-test-1.05.wav", "success": true, "cost_usd": 0.0, "duration_s": 2.72}
+{"ts": "2026-08-14T08:12:00+00:00", "tool": "asset_batch", "event": "finish", "success": true, "stock_assets": 6, "narration_sections": 9, "cost_usd": 0}
+{"ts": "2026-08-14T08:18:00+00:00", "tool": "atelier_snapshots", "event": "finish", "success": true, "review_stills": 9, "full_video_rendered": false, "cost_usd": 0}
+{"ts": "2026-08-14T08:20:00+00:00", "tool": "checkpoint", "event": "awaiting_human", "stage": "assets", "music_fallback_requires_approval": true}

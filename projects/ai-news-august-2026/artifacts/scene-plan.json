@@ -1,0 +1,361 @@
+{
+  "version": "1.0",
+  "style_playbook": "project-local editorial dark-tech atelier",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "animation",
+      "description": "Approved low-angle financial-district stock photo; cyan/amber split line expands from the center.",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "script_section_id": "s1",
+      "framing": "16:9 editorial layout inside 5% title safe",
+      "movement": "Continuous slow stock-photo push; text and chart entrances use deterministic spring/interpolation.",
+      "transition_in": "8-frame directional wipe with scene-colored line",
+      "transition_out": "8-frame crossfade/line carry",
+      "overlay_notes": "AI GETS CHEAPER / STAKES GET BIGGER",
+      "shot_language": {
+        "shot_size": "wide",
+        "camera_movement": "dolly_in",
+        "lens_mm": 35,
+        "lighting_key": "low_key",
+        "depth_of_field": "deep",
+        "color_temperature": "cool"
+      },
+      "shot_intent": "The contradiction",
+      "narrative_role": "establish_context",
+      "information_role": "Approved low-angle financial-district stock photo; cyan/amber split line expands from the center.",
+      "hero_moment": true,
+      "texture_keywords": [
+        "editorial",
+        "photographic",
+        "subtle grain",
+        "precise typography"
+      ],
+      "required_assets": [
+        {
+          "type": "stock image",
+          "description": "approved city stock",
+          "source": "source"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "animation",
+      "description": "Laptop-and-phone stock crop behind a clean 1B data card and stepped access bands.",
+      "start_seconds": 9,
+      "end_seconds": 23,
+      "script_section_id": "s2",
+      "framing": "16:9 editorial layout inside 5% title safe",
+      "movement": "Continuous slow stock-photo push; text and chart entrances use deterministic spring/interpolation.",
+      "transition_in": "8-frame directional wipe with scene-colored line",
+      "transition_out": "8-frame crossfade/line carry",
+      "overlay_notes": "1B WEEKLY \u2022 SOL / LUNA",
+      "shot_language": {
+        "shot_size": "wide",
+        "camera_movement": "dolly_in",
+        "lens_mm": 35,
+        "lighting_key": "low_key",
+        "depth_of_field": "deep",
+        "color_temperature": "cool"
+      },
+      "shot_intent": "One billion weekly",
+      "narrative_role": "deliver_payload",
+      "information_role": "Laptop-and-phone stock crop behind a clean 1B data card and stepped access bands.",
+      "hero_moment": false,
+      "texture_keywords": [
+        "editorial",
+        "photographic",
+        "subtle grain",
+        "precise typography"
+      ],
+      "required_assets": [
+        {
+          "type": "stock image",
+          "description": "laptop-phone stock",
+          "source": "source"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "animation",
+      "description": "Laptop stock panel pulls away from a dotted cloud; animated route contracts onto the device.",
+      "start_seconds": 23,
+      "end_seconds": 35,
+      "script_section_id": "s3",
+      "framing": "16:9 editorial layout inside 5% title safe",
+      "movement": "Continuous slow stock-photo push; text and chart entrances use deterministic spring/interpolation.",
+      "transition_in": "8-frame directional wipe with scene-colored line",
+      "transition_out": "8-frame crossfade/line carry",
+      "overlay_notes": "CLOUD \u2192 LAPTOP",
+      "shot_language": {
+        "shot_size": "wide",
+        "camera_movement": "dolly_in",
+        "lens_mm": 35,
+        "lighting_key": "low_key",
+        "depth_of_field": "deep",
+        "color_temperature": "cool"
+      },
+      "shot_intent": "From cloud to laptop",
+      "narrative_role": "deliver_payload",
+      "information_role": "Laptop stock panel pulls away from a dotted cloud; animated route contracts onto the device.",
+      "hero_moment": false,
+      "texture_keywords": [
+        "editorial",
+        "photographic",
+        "subtle grain",
+        "precise typography"
+      ],
+      "required_assets": [
+        {
+          "type": "stock image",
+          "description": "laptop-phone stock",
+          "source": "source"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "animation",
+      "description": "Developer code stock on right; layered parameter blocks unlock and slide into a public stack.",
+      "start_seconds": 35,
+      "end_seconds": 44,
+      "script_section_id": "s4",
+      "framing": "16:9 editorial layout inside 5% title safe",
+      "movement": "Continuous slow stock-photo push; text and chart entrances use deterministic spring/interpolation.",
+      "transition_in": "8-frame directional wipe with scene-colored line",
+      "transition_out": "8-frame crossfade/line carry",
+      "overlay_notes": "MUSE SPARK 1.2 \u2022 WEIGHTS",
+      "shot_language": {
+        "shot_size": "wide",
+        "camera_movement": "dolly_in",
+        "lens_mm": 35,
+        "lighting_key": "low_key",
+        "depth_of_field": "deep",
+        "color_temperature": "cool"
+      },
+      "shot_intent": "Weights open",
+      "narrative_role": "deliver_payload",
+      "information_role": "Developer code stock on right; layered parameter blocks unlock and slide into a public stack.",
+      "hero_moment": false,
+      "texture_keywords": [
+        "editorial",
+        "photographic",
+        "subtle grain",
+        "precise typography"
+      ],
+      "required_assets": [
+        {
+          "type": "stock image",
+          "description": "developer-code stock",
+          "source": "source"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "type": "animation",
+      "description": "Server-rack corridor emerges through a narrow iris; grid depth and low pulse.",
+      "start_seconds": 44,
+      "end_seconds": 49,
+      "script_section_id": "s5",
+      "framing": "16:9 editorial layout inside 5% title safe",
+      "movement": "Continuous slow stock-photo push; text and chart entrances use deterministic spring/interpolation.",
+      "transition_in": "8-frame directional wipe with scene-colored line",
+      "transition_out": "8-frame crossfade/line carry",
+      "overlay_notes": "COMPUTE BECOMES PHYSICAL",
+      "shot_language": {
+        "shot_size": "wide",
+        "camera_movement": "dolly_in",
+        "lens_mm": 35,
+        "lighting_key": "low_key",
+        "depth_of_field": "deep",
+        "color_temperature": "cool"
+      },
+      "shot_intent": "Compute becomes physical",
+      "narrative_role": "transition",
+      "information_role": "Server-rack corridor emerges through a narrow iris; grid depth and low pulse.",
+      "hero_moment": false,
+      "texture_keywords": [
+        "editorial",
+        "photographic",
+        "subtle grain",
+        "precise typography"
+      ],
+      "required_assets": [
+        {
+          "type": "stock image",
+          "description": "server-room stock",
+          "source": "source"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "type": "animation",
+      "description": "Approved skyscraper stock plus a rising bar, six institution nodes, and a visible NON-BINDING label.",
+      "start_seconds": 49,
+      "end_seconds": 65,
+      "script_section_id": "s6",
+      "framing": "16:9 editorial layout inside 5% title safe",
+      "movement": "Continuous slow stock-photo push; text and chart entrances use deterministic spring/interpolation.",
+      "transition_in": "8-frame directional wipe with scene-colored line",
+      "transition_out": "8-frame crossfade/line carry",
+      "overlay_notes": "> $500B \u2022 INTENDED OVER TIME",
+      "shot_language": {
+        "shot_size": "wide",
+        "camera_movement": "dolly_in",
+        "lens_mm": 35,
+        "lighting_key": "low_key",
+        "depth_of_field": "deep",
+        "color_temperature": "cool"
+      },
+      "shot_intent": "The $500B scale",
+      "narrative_role": "evidence",
+      "information_role": "Approved skyscraper stock plus a rising bar, six institution nodes, and a visible NON-BINDING label.",
+      "hero_moment": true,
+      "texture_keywords": [
+        "editorial",
+        "photographic",
+        "subtle grain",
+        "precise typography"
+      ],
+      "required_assets": [
+        {
+          "type": "stock image",
+          "description": "approved city stock",
+          "source": "source"
+        },
+        {
+          "type": "stock image",
+          "description": "server-room stock",
+          "source": "source"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "animation",
+      "description": "EU flag stock with machine-readable label motif and two requirement cards.",
+      "start_seconds": 65,
+      "end_seconds": 78,
+      "script_section_id": "s7",
+      "framing": "16:9 editorial layout inside 5% title safe",
+      "movement": "Continuous slow stock-photo push; text and chart entrances use deterministic spring/interpolation.",
+      "transition_in": "8-frame directional wipe with scene-colored line",
+      "transition_out": "8-frame crossfade/line carry",
+      "overlay_notes": "DISCLOSE \u2022 LABEL \u2022 MARK",
+      "shot_language": {
+        "shot_size": "wide",
+        "camera_movement": "dolly_in",
+        "lens_mm": 35,
+        "lighting_key": "low_key",
+        "depth_of_field": "deep",
+        "color_temperature": "cool"
+      },
+      "shot_intent": "Transparency enforced",
+      "narrative_role": "evidence",
+      "information_role": "EU flag stock with machine-readable label motif and two requirement cards.",
+      "hero_moment": false,
+      "texture_keywords": [
+        "editorial",
+        "photographic",
+        "subtle grain",
+        "precise typography"
+      ],
+      "required_assets": [
+        {
+          "type": "stock image",
+          "description": "EU flag stock",
+          "source": "source"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "type": "animation",
+      "description": "Gym smartphone stock with a schematic booking queue; one slot moves, a red boundary flashes.",
+      "start_seconds": 78,
+      "end_seconds": 93,
+      "script_section_id": "s8",
+      "framing": "16:9 editorial layout inside 5% title safe",
+      "movement": "Continuous slow stock-photo push; text and chart entrances use deterministic spring/interpolation.",
+      "transition_in": "8-frame directional wipe with scene-colored line",
+      "transition_out": "8-frame crossfade/line carry",
+      "overlay_notes": "REQUEST \u2260 ACTION",
+      "shot_language": {
+        "shot_size": "wide",
+        "camera_movement": "dolly_in",
+        "lens_mm": 35,
+        "lighting_key": "low_key",
+        "depth_of_field": "deep",
+        "color_temperature": "cool"
+      },
+      "shot_intent": "An agent crosses the line",
+      "narrative_role": "build_tension",
+      "information_role": "Gym smartphone stock with a schematic booking queue; one slot moves, a red boundary flashes.",
+      "hero_moment": true,
+      "texture_keywords": [
+        "editorial",
+        "photographic",
+        "subtle grain",
+        "precise typography"
+      ],
+      "required_assets": [
+        {
+          "type": "stock image",
+          "description": "gym smartphone stock",
+          "source": "source"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "animation",
+      "description": "Return to the city image; three pillars\u2014CAPITAL, RULES, CONSEQUENCES\u2014lock under the title.",
+      "start_seconds": 93,
+      "end_seconds": 100,
+      "script_section_id": "s9",
+      "framing": "16:9 editorial layout inside 5% title safe",
+      "movement": "Continuous slow stock-photo push; text and chart entrances use deterministic spring/interpolation.",
+      "transition_in": "8-frame directional wipe with scene-colored line",
+      "transition_out": "8-frame crossfade/line carry",
+      "overlay_notes": "ACCESS SPREADS. STAKES GROW.",
+      "shot_language": {
+        "shot_size": "wide",
+        "camera_movement": "dolly_in",
+        "lens_mm": 35,
+        "lighting_key": "low_key",
+        "depth_of_field": "deep",
+        "color_temperature": "cool"
+      },
+      "shot_intent": "The stakes",
+      "narrative_role": "resolution",
+      "information_role": "Return to the city image; three pillars\u2014CAPITAL, RULES, CONSEQUENCES\u2014lock under the title.",
+      "hero_moment": false,
+      "texture_keywords": [
+        "editorial",
+        "photographic",
+        "subtle grain",
+        "precise typography"
+      ],
+      "required_assets": [
+        {
+          "type": "stock image",
+          "description": "approved city stock",
+          "source": "source"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "project_id": "ai-news-august-2026",
+    "resolution": "1920x1080",
+    "fps": 30,
+    "duration_seconds": 100,
+    "render_runtime": "remotion",
+    "composition_mode": "atelier"
+  }
+}

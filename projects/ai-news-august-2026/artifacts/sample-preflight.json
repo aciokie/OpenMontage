@@ -1,0 +1,45 @@
+{
+  "project_id": "ai-news-august-2026",
+  "stage": "assets",
+  "status": "approved",
+  "approved_at": "2026-08-14T00:00:00+08:00",
+  "approval_verbatim": "approve- **Approve both**",
+  "batch_generation_allowed": true,
+  "spend": {
+    "cap_usd": 2.0,
+    "estimated_batch_usd": 0.0,
+    "preflight_actual_usd": 0.0
+  },
+  "voice_sample": {
+    "provider": "piper",
+    "voice": "en_US-lessac-medium",
+    "model_sha256": "5efe09e69902187827af646e1a6e9d269dee769f9877d17b16b1b46eeaaf019f",
+    "config_sha256": "efe19c417bed055f2d69908248c6ba650fa135bc868b0e6abb3da181dab690a0",
+    "section_id": "s6",
+    "text": "NVIDIA and six financial institutions signed non-binding memorandums for platforms intended to mobilize more than five hundred billion dollars in third-party AI infrastructure capital over time. The agreements are not final. The scale still tells the story.",
+    "approved_raw_duration_seconds": 16.8172789,
+    "approved_raw_sha256": "79d8801d98477958ffd193a9c3e232dcb448110e84760c769518c1ccba6eebb9",
+    "approved_review_duration_seconds": 16.817292,
+    "approved_review_sha256": "b5fe34af1b593016ef1dd4c79903826a16902d17c526b2bb6369385fc4a06f56",
+    "review_format": "mono PCM16 48 kHz",
+    "integrated_lufs": -15.52,
+    "true_peak_dbtp": -1.5,
+    "clipped_samples": 0,
+    "recovery_note": "The previously heard file was lost before batch generation. Approval remains authoritative. Batch uses the same canonical model and provider defaults; Piper synthesis is stochastic, so regenerated waveforms are not represented as hash-identical to the approved sample."
+  },
+  "stock_sample": {
+    "provider": "Unsplash",
+    "asset_id": "PhYq704ffdA",
+    "creator": "Sean Pollock",
+    "source_url": "https://unsplash.com/photos/low-angle-photo-of-city-high-rise-buildings-during-daytime-PhYq704ffdA",
+    "license_url": "https://unsplash.com/license",
+    "premium": false,
+    "plus": false,
+    "original_dimensions": "6000x4000",
+    "acquired_dimensions": "3000x2000",
+    "acquisition_sha256": "42adb4b23f3d04c548d6a44d07ad14753d3442bd550bd00582f6abecc4a8d3f1",
+    "crop_dimensions": "3000x1688",
+    "crop_sha256": "2366b7762637a4157889a859d35eecf7b04436538d8b7284afc1b24eacb5fa99",
+    "crop_path": "assets/images/samples/approved-unsplash-PhYq704ffdA-crop.jpg"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "version": "1.0",
+  "cuts": [],
+  "overlays": [],
+  "audio": {
+    "narration": {
+      "segments": [
+        {
+          "asset_id": "narration-s1",
+          "start_seconds": 0.35,
+          "end_seconds": 8.453771
+        },
+        {
+          "asset_id": "narration-s2",
+          "start_seconds": 9.2,
+          "end_seconds": 22.714021
+        },
+        {
+          "asset_id": "narration-s3",
+          "start_seconds": 23.2,
+          "end_seconds": 34.554563
+        },
+        {
+          "asset_id": "narration-s4",
+          "start_seconds": 35.2,
+          "end_seconds": 42.955479
+        },
+        {
+          "asset_id": "narration-s5",
+          "start_seconds": 44.2,
+          "end_seconds": 48.646625
+        },
+        {
+          "asset_id": "narration-s6",
+          "start_seconds": 49.2,
+          "end_seconds": 64.536792
+        },
+        {
+          "asset_id": "narration-s7",
+          "start_seconds": 65.2,
+          "end_seconds": 78.296063
+        },
+        {
+          "asset_id": "narration-s8",
+          "start_seconds": 78.5,
+          "end_seconds": 92.896375
+        },
+        {
+          "asset_id": "narration-s9",
+          "start_seconds": 93.2,
+          "end_seconds": 99.213979
+        }
+      ]
+    },
+    "sfx": []
+  },
+  "subtitles": {
+    "enabled": true,
+    "style": "sentence",
+    "source": "subtitle-pages",
+    "font": "Arial",
+    "font_size": 31,
+    "color": "#E8F2EE",
+    "outline_color": "#071015",
+    "background": "#071015E0",
+    "position": "bottom-center",
+    "max_words_per_line": 6
+  },
+  "renderer_family": "documentary-montage",
+  "render_runtime": "remotion",
+  "composition_mode": "atelier",
+  "bespoke": {
+    "entry": "/home/user/OpenMontage/projects/ai-news-august-2026/index.tsx",
+    "composition_id": "AiNewsAugust2026",
+    "art_direction": "/home/user/OpenMontage/projects/ai-news-august-2026/art-direction.md",
+    "props_path": "/home/user/OpenMontage/projects/ai-news-august-2026/artifacts/props.json",
+    "public_dir": "/home/user/OpenMontage/projects/ai-news-august-2026/public",
+    "scale": 1.0,
+    "crf": 18,
+    "concurrency": 4
+  },
+  "slideshow_risk_score": {
+    "average": 0.58,
+    "verdict": "strong"
+  },
+  "metadata": {
+    "runtime_locked_at_proposal": true,
+    "composition_mode_locked_at_proposal": true,
+    "music_candidate_asset_id": "music-procedural-candidate",
+    "music_enabled": false,
+    "music_pending_assets_gate_approval": true,
+    "narration_schedule_uses_actual_normalized_durations": true
+  }
+}

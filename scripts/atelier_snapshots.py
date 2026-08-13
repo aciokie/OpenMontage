@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -44,6 +45,11 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--entry", help="entry .tsx (default projects/<slug>/index.tsx)")
     ap.add_argument("--props", help="props JSON (default artifacts/props.json)")
     ap.add_argument("--public-dir", help="public dir (default projects/<slug>/public)")
+    ap.add_argument(
+        "--browser-executable",
+        default=os.environ.get("REMOTION_BROWSER_EXECUTABLE"),
+        help="Chrome/Chromium executable (or set REMOTION_BROWSER_EXECUTABLE)",
+    )
     ap.add_argument("--fps", type=int, default=None, help="frames per second (default from props or 30)")
     ap.add_argument("--only", nargs="*", help="only these scene ids")
     args = ap.parse_args(argv)
@@ -102,6 +108,8 @@ def main(argv: list[str] | None = None) -> int:
             f"--props={props_path.resolve()}",
             f"--public-dir={public_dir.resolve()}",
         ]
+        if args.browser_executable:
+            cmd.append(f"--browser-executable={Path(args.browser_executable).resolve()}")
         try:
             subprocess.run(cmd, cwd=COMPOSER_DIR, check=True, capture_output=True, text=True, timeout=600)
             ok += 1

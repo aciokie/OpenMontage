@@ -1,0 +1,111 @@
+{
+  "project_id": "ai-news-august-2026",
+  "research_date": "2026-08-14",
+  "live_search_count": 25,
+  "sources": [
+    {
+      "id": "SRC-001",
+      "title": "Improving GPT-5.6 Sol in ChatGPT\u2014and expanding access to GPT-5.6 Luna for free users",
+      "publisher": "OpenAI",
+      "published": "2026-08-06",
+      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
+      "accessed": "2026-08-14",
+      "type": "primary",
+      "used_for": [
+        "one billion weekly ChatGPT users",
+        "GPT-5.6 Sol and Luna access changes",
+        "OpenAI internal factual-error evaluation"
+      ]
+    },
+    {
+      "id": "SRC-002",
+      "title": "Meta launches Muse Glimmer open-weight AI model",
+      "publisher": "CNBC",
+      "published": "2026-08-10",
+      "url": "https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html",
+      "accessed": "2026-08-14",
+      "type": "news",
+      "used_for": [
+        "Muse Glimmer designed for laptops",
+        "Muse Spark 1.2 weights release"
+      ]
+    },
+    {
+      "id": "SRC-003",
+      "title": "NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms",
+      "publisher": "NVIDIA Newsroom",
+      "published": "2026-08-10",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
+      "accessed": "2026-08-14",
+      "type": "primary",
+      "used_for": [
+        "six financial institutions",
+        "non-binding memorandums",
+        "over $500 billion intended mobilization",
+        "final-agreement caveat"
+      ]
+    },
+    {
+      "id": "SRC-004",
+      "title": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
+      "publisher": "European Commission",
+      "published": "2026-07-30",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714",
+      "accessed": "2026-08-14",
+      "type": "primary",
+      "used_for": [
+        "August 2 enforcement",
+        "AI interaction disclosure",
+        "deepfake labels",
+        "machine-readable marks"
+      ]
+    },
+    {
+      "id": "SRC-005",
+      "title": "AI assistant hacks gym website in first known Australian autonomous cyber attack",
+      "publisher": "ABC News Australia",
+      "published": "2026-08-09",
+      "url": "https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986",
+      "accessed": "2026-08-14",
+      "type": "news",
+      "used_for": [
+        "gym booking vulnerability",
+        "booking beyond limits",
+        "waitlist removal not requested by user"
+      ]
+    },
+    {
+      "id": "SRC-006",
+      "title": "Unsplash License",
+      "publisher": "Unsplash",
+      "url": "https://unsplash.com/license",
+      "accessed": "2026-08-14",
+      "type": "license",
+      "used_for": [
+        "stock-photo licensing"
+      ]
+    },
+    {
+      "id": "SRC-007",
+      "title": "Pexels License",
+      "publisher": "Pexels",
+      "url": "https://www.pexels.com/license/",
+      "accessed": "2026-08-14",
+      "type": "license",
+      "used_for": [
+        "stock-photo licensing"
+      ]
+    },
+    {
+      "id": "SRC-008",
+      "title": "Pixabay Content License Summary",
+      "publisher": "Pixabay",
+      "url": "https://pixabay.com/service/license-summary/",
+      "accessed": "2026-08-14",
+      "type": "license",
+      "used_for": [
+        "music licensing"
+      ]
+    }
+  ]
+}

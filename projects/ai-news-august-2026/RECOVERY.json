@@ -1,0 +1,14 @@
+{
+  "project_id": "ai-news-august-2026",
+  "reconstructed_at": "2026-08-14T06:10:00+08:00",
+  "basis": "Explicit prior approvals and recorded hashes preserved in Arena session memory after ignored project state disappeared.",
+  "approved_stages": [
+    "research",
+    "proposal",
+    "script",
+    "scene_plan",
+    "assets samples"
+  ],
+  "remaining_gate": "assets_review",
+  "must_not_render_full_draft_before_assets_review": true
+}
